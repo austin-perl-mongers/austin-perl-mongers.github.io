@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Subroutine Attributes (Perl 5.6)</title>
+  </head>
+  <body>
+  <h2>Subroutine Attributes</h2>
+
+  <!-- Exposition -->
+  <table border bgcolor=black width=400>
+  <tr bgcolor=#99ccff>
+    <th align=left>Attribute</th>  <th align=left>Function</th>
+  </tr>
+  <tr bgcolor=#ffffcc>
+    <th align=left><code>lvalue</code></th>                
+    <td>Subroutine can be target of assignment.</td>
+  </tr>
+  <tr bgcolor=#ffffcc>
+    <th align=left><code>locked</code></th>
+    <td>Perl ensures lock is acquired on subroutine itself 
+        before subroutine is entered.  Can only be used by 
+        single thread at a time.</td>
+  </tr>
+  <tr bgcolor=#ffffcc>
+    <th align=left><code>method</code></th>
+    <td>Prevents <code>"Ambiguous call resolved as CORE::%s"</code> warning.</td>
+  </tr>
+  <tr bgcolor=#ffffcc>
+    <th align=left><code>locked&nbsp;method</code></th>
+    <td>Perl acquires lock on first argument (object) <i>and</i> 
+        method before execution.</td>
+  </tr>
+  </table>
+
+  <!-- Syntax -->
+  <p><hr>
+  <font size=+1><b><i>sub</i></b></font>
+  <p>Named declarations:
+  <pre>
+    sub <i>NAME PROTO ATTRS</i>
+    sub <i>NAME ATTRS</i>
+    sub <i>NAME PROTO</i>
+    sub <i>NAME</i>
+  </pre>
+
+  <p>Named definitions:
+  <pre>
+    sub <i>NAME PROTO ATTRS BLOCK</i>
+    sub <i>NAME ATTRS BLOCK</i>
+    sub <i>NAME PROTO BLOCK</i>
+    sub <i>NAME BLOCK</i>
+  </pre>
+
+  <p>Examples
+  <pre>
+    sub be_careful : locked method {
+      my $self = shift();
+      <font color=red># Single entry operation here</font>
+    }
+
+    my $population = 0;
+    sub population : lvalue {
+      $population;
+    }
+
+    population ++;  <font color=red># Should increment $population</font>
+  </pre>
+
+
+  <p>
+  <a href=require.html><img src=images/backward.gif border=0></a>
+  <a href=our.html><img src=images/forward.gif  border=0></a>
+  </body>
+</html>
+
