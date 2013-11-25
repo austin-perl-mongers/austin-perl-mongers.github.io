@@ -116,13 +116,15 @@ dl.nameValues + * {
 }
 dl.nameValues dt { 
 	display: block;
-	clear: both; float: left; width: 26%; 
+/*	clear: both; float: left; width: 26%; */
+	clear: both; float: left; width: 20%; 
 	margin: 0; padding: 0 0 .2em 0;
 	border-bottom: 1px dotted #ccc;
 }
 dl.nameValues dd { 
 	display: block;
-	float: left; width: 68.9%; 
+/*	float: left; width: 68.9%; */
+	float: left; width: 75%; 
 	margin: 0; padding: 0 0 .2em 0;
 	border-bottom: 1px dotted #ccc;
 }
