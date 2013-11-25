@@ -71,13 +71,14 @@ li { }
 .secondarycontentContainer
  { 
 	background-color: #eee; 
-	width: 710px;
+/*	width: 710px; */
+	width: 850px;
 	text-align: left;
 	margin: 0 auto;
 }
 
 .maincontent {
-	padding: 24px 8px 16px 8px;
+	padding: 10px 8px 10px 8px;
 }
 
 
@@ -88,11 +89,11 @@ li { }
 
 .leftcol { 
 /*	float: left; width: 62%; */
-	float: left; width: 55%;
+	float: left; width: 45%;
 }
 .rightcol { 
 /*	float: left; width: 37.9%; */
-	float: left; width: 45%;
+	float: left; width: 55%;
 	background-color: #ccc; color: #000;
 }
 .sidebarBox { 
