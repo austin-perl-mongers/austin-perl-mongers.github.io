@@ -1,4 +1,4 @@
-austin-perl-mongers.github.com
+austin-perl-mongers.github.io
 ==============================
 
-austin.pm
+wrong branch: git checkout gh-pages
