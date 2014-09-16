@@ -1,0 +1,93 @@
+1) INSTALL PERLBREW
+
+  http://perlbrew.pl/
+  http://search.cpan.org/dist/App-perlbrew/bin/perlbrew
+
+    $ curl -L http://install.perlbrew.pl | bash 
+
+  ~/.bash_profile:
+
+    source ~/perl5/perlbrew/etc/bashrc 
+
+  Reboot.
+
+  Run perlbrew with no arguments to get help:
+
+    $ perlbrew 
+
+  I used the following perlbrew commands:
+
+    install 
+    switch
+    install-cpanm
+
+2) INSTALL LOCAL PERL
+
+  http://www.cpan.org/src/
+  http://www.perl.org/get.html 
+
+  Get help for the perlbrew install command:
+
+    $ perlbrew install 
+
+  Install local perl 5.20.0:
+
+    $ perlbrew install perl-5.20.0 
+
+  Switch to 5.20.0:
+
+    $ perlbrew switch perl-5.20.0
+
+3) INSTALL CPANM
+
+  http://perlbrew.pl/Perlbrew-and-Friends.html
+  http://search.cpan.org/dist/App-perlbrew/bin/perlbrew
+
+    $ perlbrew install-cpanm
+
+  Run cpanm with no arguments to get help:
+
+    $ cpanm 
+
+4) INSTALL PERL MODULES
+
+    $ cpanm Modern::Perl
+
+    $ cpanm Perldoc::Server
+
+  Run perldoc-server:
+
+    $ perldoc-server &
+
+  Open perldoc-server in browser:
+
+    http://0:3000
+
+  http://www.catalystframework.org
+
+    $ cpanm Catalyst::Devel
+
+  DBIx::Class
+
+    $ cpanm DBIx::Class
+
+  Template::Toolkit
+
+  http://template-toolkit.org
+
+    $ cpanm Template
+    Template is up to date. (2.25)
+
+  HTML::FormHandler
+
+    $ cpanm HTML::FormHandler
+
+  Moo
+
+    $ cpanm Moo
+    Moo is up to date. (1.005000)
+
+  Moose
+
+    $ cpanm Moose
+    Moose is up to date. (2.1210)
