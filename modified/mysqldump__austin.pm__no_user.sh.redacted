@@ -1,0 +1,13 @@
+#!/bin/sh
+DATE=`date +%Y%m%d`
+USER=pm_user
+PASS='REDACTED'
+DB=austin_pm
+DIR=/home/wbraswell/public_html/austin.pm-latest/backup
+FILE=wbraswell_$DATE-austin.pm__no_user.sql
+rm $DIR/*no_user.sql.bz2
+mysqldump --user=$USER --password=$PASS $DB --lock-tables --ignore-table=$DB.user > $DIR/$FILE
+cd $DIR
+du -hs $FILE
+bzip2 $FILE
+du -hs $FILE.bz2

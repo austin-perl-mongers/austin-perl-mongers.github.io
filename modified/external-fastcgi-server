@@ -1,0 +1,5 @@
+# Start an external fastcgi server, 3 processes, listening on the specified socket path
+script/shinycms_fastcgi.pl -d \
+	-n 3 \
+	-l /tmp/austin.pm.socket \
+	-p /tmp/austin.pm.pid
