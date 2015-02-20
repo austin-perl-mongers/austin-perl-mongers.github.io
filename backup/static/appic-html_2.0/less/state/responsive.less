@@ -1,0 +1,1429 @@
+@media (min-width: 480px) {
+	//page elements
+	.pull-left.image-in-text { 
+		float: left;
+		width: auto;
+		margin-right: 30px; 
+	}
+
+	.pull-right.image-in-text { 
+		float: right;
+		width: auto;
+		margin-left: 30px; 
+	}
+
+	//triangled box
+	.triangled-box {
+		float: left;
+
+		&:before, 
+		&:after {
+			top: 70px;
+			width: 10px;
+			height: 20px;
+			margin-right: 0;
+			border-width: 10px 0 10px 10px;
+		}
+
+		&:before {
+			right: -15px;
+			border-color: transparent transparent transparent #f2f2ec;
+		}
+
+		&:after {
+			right: -10px;
+			border-color: transparent transparent transparent @brand-default;
+		}
+	}
+
+	.author__about {
+		padding-bottom: 34px;
+		margin-top: 0;
+		margin-left: 170px;
+
+		&:before, 
+		&:after {
+			top: 70px;
+			width: 10px;
+			height: 20px;
+			border-width: 10px 0 10px 10px;
+		}
+
+		&:before {
+			left: 0;
+			border-color: transparent transparent transparent #f2f2ec;
+		}
+
+		&:after {
+			left: -5px;
+			border-color: transparent transparent transparent #fff;
+		}
+	}
+	
+	//comments
+	.comment__body { margin-left: 129px; }
+
+	//blog styles
+	.post--preview-info {
+		.post__info {
+			float: left;
+			width: 100px;
+		}
+
+		.post__description { margin-left: 140px; }		
+	}
+
+	.post--preview {		
+		.post__info { float: left; }
+
+		.post__description { margin-left: 140px; }
+	}
+
+	//how it works
+	.video {
+		.fluid-width-video-wrapper { height: 350px; }
+	}
+
+	.client-says {
+		.client-says__item  { padding-bottom: 3px; }
+
+		.author__message { margin-left: 199px; }
+	}
+
+	//services
+	.services {
+		.service__icon-holder { margin-right: 48px; }
+
+		.service__description {	padding-top: 0;	}
+
+
+		.services__item--right { 
+			text-align: right;
+
+			.service__icon-holder {
+				margin-right: 0; 
+				margin-left: 48px;
+			}
+
+			.link-highlight { left: 9px; }
+		}
+	}
+
+	.services--preview {
+		.service__description {	margin-top: 23px; }
+	}
+
+	.triangled-box--right {
+		float: right;
+
+		&:before, 
+		&:after { border-width: 10px 10px 10px 0; }
+
+		&:before {
+			left: -15px;
+			border-color: transparent #f2f2ec transparent transparent;
+		}
+
+		&:after {
+			left: -10px;
+			border-color: transparent @brand-default transparent transparent;
+		}
+	}
+
+	//contact
+	.contact-form {
+		.form__field { width: 48.638132%; }
+		
+		.form__field--message { width: 100%; }
+
+		.btn { 
+			padding-right: 46px;
+			padding-left: 46px; 
+		}
+	}
+
+	//shop
+	.shop {
+		.select-form { 
+			float: right; 
+			margin-top: 0px; 
+		}
+
+		.shop__view { float: left; }
+	}
+
+	//page 404
+	.error__content {
+		background-size: 707px 712px;
+		background-position: center -95px;
+		.search-form {	width: 400px; }
+	}
+
+	//subscribe form
+	.subscribe-form--simple { max-width: 400px; }
+
+
+	//coming soon
+	.coming-content {
+		.divider-triangle { max-width: 370px; }
+	}
+
+	//home
+	.tparrows.default {	display: inline-block; }
+
+	.home-title-wrapper { 
+		height: 629px; 
+
+		.page-title-main { margin-top: 150px; }
+
+		.page-title-secondary {	margin-bottom: 30px; }
+	}
+		
+	.circle-info-buttons { display: block; }
+
+	.home-title-wrapper {
+		.decorative-lines { display: block; }
+	}
+
+	.post--latest {
+		.post__image { float: left; }
+	}
+
+	.qoutation-slider--higher { max-height: 191px; }
+}
+
+
+@media (min-width: 640px) and (max-width: 767px){
+	//home
+	.revo-slider {
+		.slide__list {
+			.icon-circle { 
+				position: relative;
+				top: -2px;
+			}
+		}
+
+		.slide__image3 {
+			width: 228px;
+			height: 200px;
+			.img-retina("http://placehold.it/678x592"; "http://placehold.it/1356x1184"; 228px; 200px);
+			background-size: 228px 200px;		
+		}
+	}
+
+	.price { 
+		width: 80%;
+		margin-right: 10%; 
+		margin-left: 10%;
+	}
+}
+
+
+//----- Extra small devices (phones, less than 768px) -----//
+@media (max-width: @screen-xs-max) { 
+	//main navigation
+	ul#navigation > li > a {
+		padding: 12px 0 16px;
+		color: #fff;
+	}
+
+	ul#navigation > li > a:hover {
+		background: transparent;
+		color: @highlight-color;
+	}
+
+	ul#navigation > li:hover { padding-bottom: 0; }
+
+	ul#navigation > li:after { display: none; }
+
+	ul#navigation {
+		top: 120px;
+		right: 0;
+		min-width: 230px;
+		background: fade(@brand-primary, 80%);
+	}
+
+	ul#navigation a {
+		padding: 7px 17px 8px;
+		color: @brand-primary-darker;
+	}
+
+	ul#navigation a:hover { color: @brand-primary-darker; }
+
+	.main-nav.fixed-pos{ position: static; } 
+
+	//swiper slider controls
+	.swiper-controls { 
+		top: -10px;
+		float: none;
+		margin-bottom: 20px;
+	}
+
+	.qoutation-slider-controls { margin-bottom: 5px; }
+
+	.carousel-controls { margin-bottom: 0; }
+
+	.top-info__text {
+		float: none !important;
+		text-align: center;
+	}
+
+	//gallery
+	.gallery-item--random {
+		.hover-effect:hover {
+			.icon-circle,
+			&:before { .opacity(0); }
+		}
+	}
+
+	//case studies
+	.project {
+		.project__description {	margin-bottom: 30px; }
+	}
+
+	.carousel-controls { top: 0; }
+
+	.similar-projects {
+		.decorative-lines { top: 111px; }
+	}
+
+	//shop
+	.slider-range {
+		.slider-range__label { float: right; }
+
+		.link-highlight { margin-top: 18px; }
+	}
+}
+
+
+//----- Small devices (tablets, 768px and up) -----//
+@media (min-width: @screen-sm-min) {
+	// main navigation
+	ul#navigation > li:hover > ul {
+		position: absolute;
+		top: 82px;
+		left: 0;
+		z-index: 200;
+		display: block;
+		min-width: 180px;
+		padding: 0 15px;
+		background: fade(@brand-primary, 80%);
+		.transform-origin(left top);
+		.animation(anime 500ms);
+	}
+
+	.main-nav.fixed-pos {
+		position:fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1000;
+		.transition(500ms, ease-in);
+		.transform(translatez(0));
+	} 
+
+	//top scroll arrow
+	.top-scroll {
+		right: 5%;
+		bottom: 55px;
+		left: auto;
+	}
+
+	//footer
+	.subscribe-form { margin-bottom: 17px; }
+
+	.widget-contacts {
+		margin-top: 4px;
+		margin-bottom: 0;
+	}
+
+	.widget-flickr { margin-top: 0; }
+
+	.social {
+		float: right;
+		margin: 11px 0 15px;
+	}
+
+	.copyright {
+		float: left;
+		padding-top: 15px;
+		padding-bottom: 21px; 
+	}
+
+	.coming-footer-wrapper {
+		.widget-tweets { margin-top: 0; }
+	}
+
+	//accordion
+	.accordion { min-height: 258px; }
+
+	//buttons demo
+	.btn-demo {    
+	    padding-right: 10px;
+        padding-left: 10px;
+	}
+
+	//promobox
+	.promobox {
+		padding: 18px 23px 20px 24px;
+		text-align: left;
+
+		.btn-wider {
+		    float: right;
+			padding: 5px 68px 10px 66px;
+			margin-top: 0;			
+		}
+
+		.promobox__text {    
+			float: left;
+			max-width: 370px;
+			margin-top: 3px;
+		}
+	}
+
+	//tabs
+	.nav-tabs {
+		> li {
+		    float: left;
+			margin-bottom: -1px;
+
+			// Actual tabs (as links)
+			> a {
+				font-weight: normal;
+				color: #fff;
+			    background: @highlight-color;
+				border: 1px solid transparent;
+
+				&:hover {
+				    background: @brand-primary;
+					border: 1px solid transparent;
+			    }
+			}
+
+		    // Active state, and its :hover to override normal :hover
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					color: @highlight-color;
+					border: 1px solid #e8e8dd;
+					border-bottom-color: transparent;
+				}
+		    }
+		}
+	}
+
+	.tabs--vertical {	
+		.nav-tabs {
+			display: block;
+			float: left;
+			border: 0;
+
+			> li {
+				float: none;
+
+				// Actual tabs (as links)
+				> a {
+					padding-left: 12px;
+					border: 0;
+					border-left: 5px solid fade(#fff, 0);
+				}
+
+			    // Active state, and its :hover to override normal :hover
+				&.active > a {
+					&,
+					&:hover,
+					&:focus {
+						color: #fff;
+						background: @highlight-color;
+						border: 0;
+						border-left: 5px solid lighten(@highlight-color, 18%);
+					}
+			    }
+			}
+		}
+
+		.tab-content {
+			min-height: inherit;
+		}
+	}
+	
+	.tabs-responsive {
+		.tabs--vertical { min-height: 238px; }
+	}
+
+	//quote
+	.quote { padding-left: 185px; }
+
+	//comments
+	.comment--reply { padding-left: 158px; }
+
+	//sidebar
+	.sidebar { padding-left: 40px; }
+	.sidebar--thin{ padding-left: 80px; }
+
+	//headings
+	.page-title {
+		float: left;
+		font-size: 30px;
+		line-height: 1.1;
+		text-align: left;
+
+		.page-title-main {
+			font-size: 90px;
+			line-height: 90px;
+		}
+
+		&.page-title-margin { margin-top: 116px; }
+	}
+
+	.section-title {
+		margin-top: 49px;
+		margin-bottom: 47px;
+		font-size: 30px;
+		line-height: 43px;
+
+		.text-highlight { font-size: 80px; }
+	}
+
+	.section-title--smaller {
+		margin-top: 61px;
+		margin-bottom: 30px;
+		font-size: 20px;
+		line-height: 31px;
+
+		.text-highlight { font-size: 40px; }
+	}
+
+	//circle button
+	.circle-button-wrapper {
+		float: right;
+	    width: 180px;
+	    height: 180px;
+	    margin-top: 81px;
+	}
+
+	.circle-button__title {
+		margin-top: 52px;
+	 	font-size: 30px;  
+	 	line-height: 40px;	
+	}
+
+	//price tables
+	.price-width { width: 33.333333%; }
+
+	//gallery	
+	.item-width-3 { width: 354px; }
+
+	.item-width-4 { width: 476px; }
+
+	.item-height-2 { height: 232px; }
+
+	.gallery-item--random { overflow: visible; }
+
+	.gallery-item--dark { 
+		.gallery__image { border: 4px solid @brand-primary; }
+	}
+
+	.gallery-item--highlight { 
+		.gallery__image { border: 4px solid @highlight-color; }
+	}
+
+	.gallery-item--light { 
+		.gallery__image { border: 4px solid @brand-default; }
+	}
+
+	.gallery-item--neutral { 
+		.gallery__image { border: 4px solid #e3e8ec; }
+	}
+	
+	.item-width-1.item-height-1 {
+		&:hover {
+			.icon-circle,
+			.gallery__image:before { .opacity(1); }
+		}
+	}
+
+	.gallery-item {
+		.gallery__title { min-height: 40px; }
+	}
+
+	.gallery-item--compact {
+		.gallery__description { min-height: 257px; }
+	}
+
+	//about
+	.about__contact {
+		.contact__button {
+			padding-left: 54px;
+			padding-right: 54px;
+		}
+	}
+
+	//how it works
+	.meet {
+		.meet__image-description { padding: 0; }
+
+		.meet__service-wrapper { padding: 55px 0 48px;}
+
+		.meet__service { padding-top: 0; }
+	}
+
+	.compatibility {
+		.compatibility__image-description { padding: 0; }
+	}
+
+	.qoutation-slider-controls { top: -65px; }
+
+	.promobox.promobox--alternative {
+		min-height: 297px;
+	    margin-top: 60px;
+
+	    .btn {
+			padding-right: 9.5px;	
+			padding-left: 9.5px;    	
+	    }
+
+		.contact__button { 
+			padding-right: 23px;
+			padding-left: 23px;
+		}
+	}
+
+	//services
+	.support {
+		.section-title { 
+			.text-highlight { font-size: 40px; }
+		}
+	}
+
+	//shop 
+	.shop {
+		.shop__category { max-width: none; }
+	}
+
+	.product {
+		.product__title { min-height: 80px; }
+	}
+
+	.product--list {
+		.product__image { float: left; }
+
+		.product__description { margin-left: 250px; }
+
+		.product__title { min-height: 1px; }
+	}
+
+	.select-form--alternative {
+		.selectpicker,
+		.dropdown-menu,
+		.bootstrap-select.btn-group .dropdown-menu  { width: 100%; }
+	}
+
+	//carousel
+	.carousel { max-height: 325px; }
+
+	//qoutation slider
+	.qoutation-slider { max-height: 173px; }
+
+	.client-says {
+		.client-says__item { 
+			&:after { display: block; }
+		}
+	}
+
+	.qoutation-slider--higher { max-height: 180px; }
+	
+	//single product
+	.shop-tabs { margin-top: 20px; }
+
+	//page 404
+	.error__content {
+		.search-form {	width: 570px; }
+	}
+
+	//subscribe form
+	.subscribe-form--simple { max-width: 500px; }
+
+	//coming soon
+	.widget-social {
+		.social { max-width: 205px; }
+	}
+
+	//home
+	.tp-bullets.tp-thumbs {	display: block; }
+
+	.revo-slider {
+		.slide__list {
+			font-size: 26px;
+
+			.icon-circle {
+				position: relative;
+				top: -2px;
+				width: 14px;
+				height: 14px;
+				padding-top: 3px;
+				font-size: 6px;
+				line-height: 6px;
+			}
+		}
+
+	    .slide__image2 { 
+			width: 204px;
+			height: 172px;
+			.img-retina("../images/revo_slider/revo-img2.png"; "../images/revo_slider/revo-img2x2.png"; 204px; 172px);
+			background-size: 204px 172px;
+		}
+
+		.slide__image3 {
+			width: 265px;
+			height: 232px;
+			.img-retina("http://placehold.it/678x592"; "http://placehold.it/1356x1184"; 265px; 232px);
+			background-size: 265px 232px;		
+		}
+	}
+
+	.home-title-wrapper {
+		.page-title-main {
+			margin-top: 125px;
+			margin-bottom: 32px;
+			font-size: 78px;
+			line-height: 78px;
+		}
+
+		.page-title-secondary {
+			margin-bottom: 35px;
+			font-size: 24px;
+			line-height: 24px;
+		}
+
+		.btn { display: none; }
+
+		.decorative-lines { top: 97px; }
+	}
+
+	.bannercontainer { margin-bottom: 150px; }
+
+	.services--preview {
+		.decorative-lines { top: 67px; }
+	}
+
+
+	.circle-info-wrapper {		
+	    width: 180px;
+	    height: 180px;
+	    margin: 20px;
+	}
+
+	.circle-info__front,
+	.circle-info__back { .box-shadow(0 0 0 10px fade(#e8e8dd, 20%)); }
+
+	.circle-info__title {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.circle-info__front {
+		.circle-info__title { margin-top: 71px; }
+	}
+
+	.circle-info__back {
+		.circle-info__title { margin-top: 31px; }
+	}
+
+	.choose-us {
+		padding-left: 47px;
+
+		.section-title { margin-top: 52px; }
+	}
+}
+
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 	
+	//footer
+	.widget-contacts { margin-bottom: 60px; }
+
+	.widget-contacts__item { display: block; }
+
+	.twitter_update_list { max-width: 275px; }
+
+	//tabs
+	.tabs-responsive {
+		float: none;
+		width: 100%;
+	}
+
+	//gallery
+	.gallery-item--random {
+		.gallery__icon-wrapper { display: none; }
+
+		.gallery__image {
+			position: relative;
+
+			.icon-circle { 
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				display: block;
+				width: 26px;
+				height: 26px;
+				margin: -13px 0 0 -13px;
+				color: #fff;
+				border-color: #fff;
+				.transition(500ms, ease-in-out);
+				.opacity(0);
+			}			
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: fade(@brand-primary, 80%);
+				.transition(500ms, ease-in-out);
+				.opacity(0);
+			}		
+		}
+
+		&:hover {
+			.icon-circle,
+			.gallery__image:before { .opacity(1); }
+		}
+	}
+	
+	//qoutation slider
+	.qoutation-slider-controls { margin-top: 55px; }
+
+	//services
+	.support {
+		.support__item { font-size: 21px; }
+	}
+
+	//shop
+	.product {
+		.product__price { 
+			float: none; 
+			bottom: 0;
+		}
+	}
+
+	.product--list {
+		.btn { 
+			float: none; 
+			margin-top: 10px;
+		}
+	}
+
+	//home
+	.post--latest {
+		.post__title { margin-bottom: 13px; }
+
+		.post__date { margin-left: 190px; }
+	}
+}
+
+//----- Medium devices (desktops, 992px and up) -----//
+@media (min-width: @screen-md-min) {
+	//footer
+	.widget-news__text { margin-bottom: 12px; }
+
+	.widget-contacts__item { margin-right: 25px; }
+
+	.widget-flickr { 
+		padding-left: 13px;
+		padding-right: 2px; 
+	}
+
+	//accordion
+	.accordion { min-height: 238px; }
+
+	//buttons demo
+	.button-demo-wrapper {
+	    margin-right: -15px;
+	    margin-left: -15px;
+	}
+
+	//promobox
+	.promobox {
+		.promobox__text {   
+			max-width: 585px; 
+			margin-top: 4px;
+			font-size: 24px;
+		}
+	}
+
+	//tabs
+	.tabs-responsive {
+		.tabs--vertical { min-height: 398px; }
+	}
+
+	//blog style 3
+	.block-width-1 { width: 290px; }
+
+	.block-width-2 { width: 610px; }
+	
+	.block-height-1 { height: 289px; }
+
+	.block-height-2 { height: 475px; }
+
+	.post--preview-block {
+		.post__date,
+		.post__title {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	.block-width-1 { 
+		&.block-height-1 {
+			.post__description { 
+				top: 157px;
+				right: 0;
+			}
+		}
+
+		&.block-height-2 {
+			.post__description { 
+				top: 266px;
+				right: 0;
+			}
+		}
+	}
+
+	//blog style 3
+	.block-width-2 { 
+		.post__image { width: 400px; }
+
+		.post__description { 
+			top: 0;
+			left: 0;
+			padding: 17px 20px 0 20px;
+			margin-left: 400px; 
+		}
+
+		.post__date,
+		.post__title { 
+			float: none;
+			width: 100%;		
+		}
+
+		.post__title {
+			margin-top: 0;
+			text-align: right;
+		}
+
+		.divider-simple { 
+			display: block; 
+			margin-bottom: 22px; 
+		}
+
+		&:after { display: none; }
+	}
+
+	.post--preview-block:hover {
+		.post__description {
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    z-index: 5;
+			margin-left: 0;
+		}
+		
+		.post__date,
+		.post__title { display: block; }
+
+		.post__title { 
+			margin-top: -3px;
+			margin-bottom: 30px; 
+		}
+
+		.post__text { clear: both; }
+	}
+
+	//gallery	
+	.item-width-1 { width: 146px; }
+
+	.item-width-2 { width: 304px; }
+	
+	.item-width-3 { width: 462px; }
+
+	.item-width-4 { width: 620px; }
+
+	.item-height-1 { height: 146px; }
+
+	.item-height-2 { height: 304px; }
+
+	.gallery-item--compact {
+		.gallery__description { min-height: 217px; }
+	}
+
+	//price tables
+	.price-width { width: 20%; }
+
+	//about
+	.about__contact {
+		.contact__button {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+	}
+
+	//how it works
+	.client-says {
+		.author__message { padding-top: 30px; }
+	}
+
+	.promobox.promobox--alternative {
+		.btn {
+			padding-right: 36.5px;
+			padding-left: 36.5px;
+		}		
+
+		.contact__button { 
+			padding-right: 50px;
+			padding-left: 50px;
+		}
+	}
+
+	//services
+	.support {
+		.section-title { 
+			.text-highlight { font-size: 52px; }
+		}
+	}
+
+	.services {
+		.service__description {	margin-top: 8px; }
+	}
+
+	.services--preview {
+		.service__description {	margin-top: 23px; }
+	}
+
+	//shop 
+	.shop {
+		.shop__category { 
+			padding: 30px 365px 30px 23px; 
+			margin-bottom: 67px;
+		}
+
+		.shop__category__image { 
+			position: absolute;
+			top: -20px; 
+			max-width: 365px; 
+		}
+	}
+
+	.product {
+		.product__title { min-height: 60px; }
+	}
+
+	.product--list {
+		.product__title { min-height: 1px; }
+	}
+
+	//team slider
+	.team__slider { min-height: 426px; }
+
+	//carousel
+	.carousel { max-height: 427px; }
+	
+	//subscribe form
+	.subscribe-form--simple { max-width: 650px; }
+
+	//coming soon
+	.coming-content {
+		.decorative-lines { display: block; }
+	}
+
+	.coming-footer-wrapper {		
+		.widget-tweets {
+			padding-left: 15px;
+			margin-left: 0;
+		}
+	}
+
+	//home
+	.revo-slider {
+	    .slide__image1 { 
+			width: 285px;
+			height: 324px;
+			.img-retina("http://placehold.it/380x431"; "http://placehold.it/760x862"; 285px; 324px);
+			background-size: 285px 324px;
+		}
+
+		.slide__image2 { 
+			width: 268px;
+			height: 226px;
+			.img-retina("../images/revo_slider/revo-img2.png"; "../images/revo_slider/revo-img2x2.png"; 268px; 226px);
+			background-size: 268px 226px;
+		}
+
+		.slide__box {
+	    	width: 840px;
+	    	height: 180px;
+	    }
+
+		.slide__image3 {
+			width: 369px;
+			height: 323px;
+			.img-retina("http://placehold.it/678x592"; "http://placehold.it/1356x1184"; 369px; 323px);
+			background-size: 369px 323px;		
+		}
+	}
+
+	.services--preview {
+		.service__title { font-size: 24px; }
+	}
+
+	.section-title.section-title--light { 
+		font-size: 30px;	
+		line-height: 43px;
+
+		.text-highlight { 
+			font-size: 80px;
+		}
+	}
+
+	.universe {
+		.section-title { margin-top: 46px; }
+    }
+
+	.circle-button-wrapper.circle-button--smaller-wraper { margin-left: 65px; }
+}
+
+//----- Large devices (large desktops, 1200px and up)-----//
+@media (min-width: @screen-lg-min) {
+	.container {	
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	//footer
+	.widget-news__text { 
+		float: left;
+		width: 44%; 
+		padding-right: 5px;
+		margin-right: 0;
+	}
+
+	.widget-news {
+		.subscribe-form { 
+			float: right;
+			width: 56%; 
+		}
+	}
+	
+	.widget-flickr { 
+		padding-left: 15px;
+		padding-right: 15px; 
+	}
+
+	//accordion
+	.accordion { min-height: 218px; }
+
+	//buttons demo
+	.btn-demo {    
+	    float: left;
+	    width: 16.666666666666664%;
+	    padding-right: 15px;
+        padding-left: 15px;
+	    text-align: left;
+	}
+
+	.promobox {
+		.promobox__text {
+			max-width: 820px;
+			margin-top: 13px;
+		    font-size: 24px;
+		}
+	}
+
+	//tabs
+	.tabs--vertical {
+		.nav-tabs > li {			
+			> a { padding-right: 32px; }
+		}
+	}
+
+	.tabs-responsive {
+		.tabs--vertical { min-height: 300px; }
+	}
+
+	//about author
+	.author__about { padding-bottom: 34px; }
+
+	//blog style 3
+	.block-width-1 { width: 370px; }
+
+	.block-width-2 { width: 770px; }
+
+	.block-height-1 { height: 340px; }
+
+	.block-height-2 { height: 560px; }
+
+	.post--preview-block {
+		.post__date { font-size: 20px; }
+	}
+
+	.block-width-1 { 
+		.post__title {
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		&.block-height-1 {
+			.post__description { 
+				top: 200px;
+				right: 0;
+			}
+		}
+
+		&.block-height-2 {
+			.post__description { 
+				top: 340px;
+				right: 0;
+			}
+		}
+	}
+
+	.block-width-2 { 
+		.post__image { width: 470px; }		
+
+		.post__description { margin-left: 470px; }	
+
+		.divider-simple { margin-bottom: 64px;	}
+
+		.post__title {
+			font-size: 20px;
+			line-height: 28px;
+		}
+	}
+
+	.post--preview-block:hover {
+		.post__description {
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    z-index: 5;
+			margin-left: 0;
+		}
+	}
+
+	//gallery	
+	.item-width-1 { width: 185px; }
+
+	.item-width-2 { width: 382px; }
+	
+	.item-width-3 { width: 579px; }
+
+	.item-width-4 { width: 776px; }
+
+	.item-height-1 { height: 185px; }
+
+	.item-height-2 { height: 382px; }
+
+	.gallery-item--random {
+		.gallery__title { font-size: 18px; }
+	}
+
+	.gallery-item--highlight {
+		.gallery__title { font-size: 20px; }
+	}
+
+	.title-position--right {
+		.gallery__title,
+		.gallery__icon-wrapper { width: 185px; }
+
+		.gallery__title { padding: 35px 15px 0; }
+	}
+
+	.title-position--bottom {
+		.gallery__title { padding: 15px 55px 0 15px; }
+	}
+
+	.gallery-item--compact {
+		.gallery__description { min-height: 177px; }
+	}
+	
+	//about
+	.about__contact {
+		.contact__button {
+			padding-right: 79px;
+			padding-left: 79px;
+		}
+	}
+
+	//how it works
+	.meet {
+		.meet__image-description { line-height: 20px; }
+	}
+
+	.compatibility{
+		.compatibility__image-description { line-height: 20px; }
+	}
+
+	.client-says {
+		.author__message { padding-top: 42px; }
+	}
+
+	.promobox.promobox--alternative {
+		.btn {
+			padding-right: 68px;
+			padding-left: 66px;
+		}
+
+		.contact__button { 
+			padding-right: 80px;
+			padding-left: 80px;
+		}
+	}
+
+	//services
+	.support {
+		.section-title { 
+			.text-highlight { font-size: 60px; }
+		}
+	}
+
+	.services {
+		.service__description {	margin-top: 20px; }
+	}
+
+	.services--preview {
+		.service__description {	margin-top: 23px; }
+	}
+
+	//shop 
+	.shop {
+		.shop__category { padding: 42px 23px; }
+
+		.shop__category__title { margin-right: 365px; }
+
+		.shop__category__text { margin-right: 410px; }
+
+		.shop__category__image { 
+			top: -31px;
+			max-width: 413px; 
+		}
+	}
+
+	.product {
+		.product__title { min-height: 1px; }
+	}
+
+	.slider-range {
+		.slider-range__label { float: right; }
+		
+		.link-highlight { margin-top: 18px; }
+	}
+
+	//carousel
+	.carousel { max-height: 530px; }
+	
+	//single product
+	.shop-tabs { margin-top: 40px; }
+	
+	//subscribe form
+	.subscribe-form--simple { max-width: 770px; }
+
+	//home
+	.revo-slider {
+	    .slide__image1 { 
+			width: 380px;
+			height: 431px;
+			.img-retina("http://placehold.it/380x431"; "http://placehold.it/760x862"; 380px; 431px);
+			background-repeat: no-repeat;
+			background-size: 380px 431px;
+		}
+
+		.slide__image2 { 
+			width: 320px;
+			height: 270px;
+			.img-retina("../images/revo_slider/revo-img2.png"; "../images/revo_slider/revo-img2x2.png"; 320px; 270px);
+			background-size: 320px 270px;
+		}
+
+	    .slide__box {
+	    	width: 934px;
+	    	height: 192px;
+	    }
+
+		.slide__list {
+			font-size: 22px; 
+			
+			.icon-circle {
+				width: 20px;
+				height: 20px;
+				padding-top: 2.5px;
+				margin-right: 14px;
+				font-size: 10px;
+				line-height: 12px;
+				border-width: 2px;				
+			}
+		}
+
+		.slide__image3 {
+			width: 412px;
+			height: 360px;
+			.img-retina("http://placehold.it/678x592"; "http://placehold.it/1356x1184"; 412px; 360px);
+			background-size: 412px 360px;		
+		}
+	}
+
+	.universe {	
+		background: url(../images/univers-circles.png), url(../images/univers-bg.jpg); 
+		background-repeat: repeat-x;
+		background-position: center 0;
+		background-size: cover;
+	}
+
+	.circle-button-wrapper.circle-button--smaller-wraper { margin-left: 130px; }
+
+	.post--latest {
+		.post__description { margin-left: 200px; }
+
+		.post__title { margin-bottom: 13px; }
+
+		.post__date { margin-bottom: 22px; }
+	}
+}
+
+@media (min-width: 1800px) {
+	//home
+	.revo-slider {
+
+		.slide__image2 { 
+			width: 456px;
+			height: 385px;
+			.img-retina("../images/revo_slider/revo-img2.png"; "../images/revo_slider/revo-img2x2.png"; 456px; 385px);
+			background-size: 456px 385px;
+		}
+
+		.slide__list {
+			font-size: 16px; 
+			
+			.icon-circle {
+				width: 26px;
+				height: 26px;
+				padding-top: 5px;
+				font-size: 12px;
+				line-height: 12px;
+				border-width: 2px;				
+			}
+		}
+
+		.slide__image3 {
+			width: 678px;
+			height: 592px;
+			.img-retina("http://placehold.it/678x592"; "http://placehold.it/1356x1184"; 678px; 592px);
+			background-size: 678px 592px;		
+		}
+	}
+}

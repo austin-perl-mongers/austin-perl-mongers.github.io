@@ -1,0 +1,525 @@
+@media (min--moz-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+/*---------------------------------------------------------------------------
+						Begin index.html
+---------------------------------------------------------------------------*/
+.menu-icon {
+	background: url(../img/svg/close-open-menu-icon.svg) 0 0 no-repeat;
+}
+
+.open-menu .menu-icon {
+	background: url(../img/svg/close-open-menu-icon.svg) 0 100% no-repeat;;
+}
+
+.ch-info-back a {
+    background: url(../img/svg/call-to-action-arrows.svg) no-repeat 0 0;
+}
+
+.ch-info-back a:hover {
+    background: url(../img/svg/call-to-action-arrows.svg) no-repeat 0 -20px;
+}
+
+.pattern-wrap {
+	background: url(../img/call-to-action-pattern_2.png) repeat;
+	background-size: 5px 5px
+}
+
+.horizontal-grey-lines {
+	background-image: url(../img/horizontal-lines_2.png);
+	background-size: 5px 21px
+}
+
+.horizontal-blue-lines {
+	background-image: url(../img/horizontal-lines-services_2.png);
+	background-size: 5px 21px
+}
+
+.blue-line-wrap:before {
+    background-image: url(../img/svg/blue-round.svg);
+}
+
+.camera_pag_ul li {
+    background-image: url(../img/svg/benefits-arrow.svg);
+}
+
+.grey-lines:before {
+    background-image: url(../img/svg/grey-round.svg);
+}
+
+.bx-controls-direction .bx-prev {
+    background: url(../img/svg/bxslider-arrows.svg) no-repeat 0 0;
+}
+
+.bx-controls-direction .bx-prev {
+    background: url(../img/svg/bxslider-arrows.svg) no-repeat 0 0;
+}
+
+.bx-controls-direction .bx-next {
+	background: url(../img/svg/bxslider-arrows.svg) 0 -40px no-repeat;	
+}
+
+.quick-support-icon {
+	background: url(../img/svg/icon-services.svg) 0 0 no-repeat;
+}
+
+.multiple-users-icon {
+	background: url(../img/svg/icon-services.svg) 0 -70px no-repeat;
+}
+
+.cloud-computing-icon {
+	background: url(../img/svg/icon-services.svg) 0 -140px no-repeat;
+}
+
+.cost-reduction-icon {
+	background: url(../img/svg/icon-services.svg) 0 -210px no-repeat;
+}
+
+.posts-arrow {
+	background: url(../img/svg/download-button-arrow.svg) 0 -40px no-repeat;
+}
+
+.posts-arrow:hover {
+	background: url(../img/svg/download-button-arrow.svg) 0 0 no-repeat;
+}
+
+.accordion-minus:before {
+	background: url(../img/svg/accordion-minus.svg) 0 center no-repeat;
+}
+
+.accordion-plus:before {
+	background: url(../img/svg/accordion-plus.svg) 0 center no-repeat;
+}
+
+input[type="submit"],
+.submit-button {
+	background: url(../img/svg/benefits-arrow-hover.svg) no-repeat;	
+}
+
+.submit-button:hover {
+	background: url(../img/svg/benefits-arrow.svg) no-repeat;
+}
+
+.widget-news-phone {
+	background: url(../img/svg/widget-news-icons.svg) 0 0 no-repeat;	
+}
+
+.widget-news-email {
+	background: url(../img/svg/widget-news-icons.svg) 0 -30px no-repeat; 
+}
+
+.widget-news-address {
+	background: url(../img/svg/widget-news-icons.svg) 0 -60px no-repeat;
+}
+
+.pinterest-icon {
+	background: url(../img/svg/social-icons.svg) 0 0 no-repeat;
+}
+
+.pinterest-icon:hover,
+.appic-team .pinterest-icon:hover {
+	background: url(../img/svg/social-icons.svg) 0 -175px no-repeat;
+}
+
+.google-icon {
+	background: url(../img/svg/social-icons.svg) 0 -35px no-repeat;
+}
+
+.google-icon:hover,
+.appic-team .google-icon:hover {
+	background: url(../img/svg/social-icons.svg) 0 -210px no-repeat;
+}
+
+.linkedin-icon {
+	background: url(../img/svg/social-icons.svg) 0 -70px no-repeat;
+}
+
+.linkedin-icon:hover,
+.appic-team .linkedin-icon:hover {
+	background: url(../img/svg/social-icons.svg) 0 -245px no-repeat;
+}
+
+.twitter-icon {
+	background: url(../img/svg/social-icons.svg) 0 -105px no-repeat;
+}
+
+.twitter-icon:hover,
+.appic-team .twitter-icon:hover {
+	background: url(../img/svg/social-icons.svg) 0 -280px no-repeat;
+}
+
+.facebook-icon {
+	background: url(../img/svg/social-icons.svg) 0 -140px no-repeat;
+}
+
+.facebook-icon:hover,
+.appic-team .facebook-icon:hover {
+	background: url(../img/svg/social-icons.svg) 0 -315px no-repeat;
+}
+
+.top-scroll a{
+	background:url(../img/svg/arrow.svg) rgba(0,0,0,0.6) center center;	
+}
+
+.top-scroll a:hover{
+	background:url(../img/svg/arrow.svg) rgba(124,203,252,0.6) center center;	
+}
+/*---------------------------------------------------------------------------
+						End index.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin index3.html
+---------------------------------------------------------------------------*/
+/* Uncomment if you wish white arrow
+
+#home-revo-slider2 .tparrows.tp-leftarrow{
+	background: url(../img/svg/revo-slider-arrows.svg) 0 0 no-repeat;
+}
+
+#home-revo-slider2 .tparrows.tp-rightarrow{
+	background: url(../img/svg/revo-slider-arrows.svg) 0 -36px no-repeat;
+}*/
+
+#home-revo-slider2 .tparrows.tp-leftarrow{
+	background: url(../img/svg/revo-slider-arrows.svg) 0 -72px no-repeat;
+}
+
+#home-revo-slider2 .tparrows.tp-rightarrow{
+	background: url(../img/svg/revo-slider-arrows.svg) 0 -108px no-repeat;
+}
+
+#home-revo-slider2 .caption.list > span {
+	background: url(../img/svg/benefits-arrow-hover.svg) 0 0 no-repeat;
+}
+
+.revo-img1 {
+	background-image: url(http://placehold.it/760x862);
+}
+
+.revo2-img1 {
+	background-image: url(http://placehold.it/912x770);
+} 
+
+.revo2-img2 {
+	background-image: url(http://placehold.it/1356x1184);
+} 
+
+/*---------------------------------------------------------------------------
+						End index3.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin about.html
+---------------------------------------------------------------------------*/
+.download-button-arrow {
+	background: url(../img/svg/download-button-arrow.svg) 0 0 no-repeat;
+}
+
+.ch-second-info .download-button-arrow {
+	background: url(../img/svg/download-button-arrow.svg) 0 -20px no-repeat;
+}
+
+.foto-about{
+	background-image: url(http://placehold.it/3800x716);	
+	background-size: 1900px 358px;
+}
+
+.foto-pattern {
+	background: url(../img/foto-pattern-dark_2.png) repeat;
+	background-size: 5px 5px
+}
+
+.event.pink .sircle {
+	background: url(../img/svg/timeline-sircle.svg) 0 0 no-repeat;
+}
+
+.appic-team .holder-author-photo {
+	background: url(../img/holder-team-photo_2.png);
+	background-size: 200px 200px;
+}
+
+.appic-team .pinterest-icon {
+	background: url(../img/svg/social-icons.svg) 0 -350px no-repeat;
+}
+
+.appic-team .google-icon {
+	background: url(../img/svg/social-icons.svg) 0 -385px no-repeat;
+}
+
+.appic-team .linkedin-icon {
+	background: url(../img/svg/social-icons.svg) 0 -420px no-repeat;
+}
+
+.appic-team .twitter-icon {
+	background: url(../img/svg/social-icons.svg) 0 -455px no-repeat;
+}
+
+.appic-team .facebook-icon {
+	background: url(../img/svg/social-icons.svg) 0 -490px no-repeat;
+}
+/*---------------------------------------------------------------------------
+						End about.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin 404.html
+---------------------------------------------------------------------------*/
+.search-wrap .submit-button {
+	background: url(../img/svg/submit-button-search.svg) 0 0 no-repeat;
+}
+
+.search-wrap .submit-button:hover {
+	background: url(../img/svg/submit-button-search.svg) 0 -26px no-repeat;
+}
+
+.content-404 {
+	background-image: url(../img/404_2.png);	
+	background-size: 707px 712px;
+}
+/*---------------------------------------------------------------------------
+						End 404.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin coming-soon.html
+---------------------------------------------------------------------------*/
+.vimeo-icon {
+	background: url(../img/svg/social-icons.svg) 0 -525px no-repeat;
+}
+
+.vimeo-icon:hover {
+	background: url(../img/svg/social-icons.svg) 0 -630px no-repeat;
+}
+
+.youtube-icon {
+	background: url(../img/svg/social-icons.svg) 0 -560px no-repeat;
+}
+
+.youtube-icon:hover {
+	background: url(../img/svg/social-icons.svg) 0 -665px no-repeat;
+}
+
+.skype-icon {
+	background: url(../img/svg/social-icons.svg) 0 -595px no-repeat;
+}
+
+.skype-icon:hover {
+	background: url(../img/svg/social-icons.svg) 0 -700px no-repeat;
+}
+/*---------------------------------------------------------------------------
+						End coming-soon.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin how-it-works.html
+---------------------------------------------------------------------------*/
+.foto-how-it-works {
+	background-image: url(http://placehold.it/3840x716);
+	background-size: 1920px 358px;
+}
+
+.price-icon {
+	background: url(../img/svg/meet-appic-icons.svg) 0 0 no-repeat;
+}
+
+.clock-icon {
+	background: url(../img/svg/meet-appic-icons.svg) 0 -66px no-repeat;
+}
+
+.subscribe-meet-image:before {
+	background: url(../img/svg/subscribe-image-arrow.svg) 0 0 no-repeat;
+}
+
+.subscribe-compatibility-image:before {
+	background: url(../img/svg/compatibility-image-arrow.svg) 0 0 no-repeat;
+}
+
+.link-arrow {
+	background: url(../img/svg/download-button-arrow.svg) 0 -40px no-repeat;
+}
+
+.link-button:hover .link-arrow {
+	background: url(../img/svg/download-button-arrow.svg) 0 -60px no-repeat;
+}
+
+.alert:before {
+	background-image: url(../img/svg/alert-icons.svg);
+}
+/*---------------------------------------------------------------------------
+						End how-it-works.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin services.html
+---------------------------------------------------------------------------*/
+.foto-service {
+	background-image: url(http://placehold.it/3840x716);
+	background-size: 1920px 358px;
+}
+
+.market-icon {
+	background: url(../img/svg/icon-services.svg) 0 -560px no-repeat;
+}
+
+.editor-icon {
+	background: url(../img/svg/icon-services.svg) 0 -630px no-repeat;
+}
+
+.cost-icon {
+	background: url(../img/svg/icon-services.svg) 0 -490px no-repeat;
+}
+
+.time-icon {;
+	background: url(../img/svg/icon-services.svg) 0 -700px no-repeat;
+}
+
+.files-operating-icon {
+	background: url(../img/svg/icon-services.svg) 0 -770px no-repeat;
+}
+
+.investment-program-icon {
+	background: url(../img/svg/icon-services.svg) 0 -840px no-repeat;
+}
+
+/*---------------------------------------------------------------------------
+						End services.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin prices.html
+---------------------------------------------------------------------------*/
+.foto-prices {
+	background-image: url(http://placehold.it/3840x716);
+	background-size: 1920px 358px;
+}
+
+.pricing-tables.three-cols .pr-head:before {
+	background: url(../img/svg/pricing-tables-three-circle.svg) 0 0 no-repeat;
+}
+/*---------------------------------------------------------------------------
+						End prices.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin contact.html
+---------------------------------------------------------------------------*/
+.get-in-touch .widget-news-phone {
+	background: url(../img/svg/widget-news-icons.svg) 0 -90px no-repeat;
+}
+
+.get-in-touch .widget-news-email {
+	background: url(../img/svg/widget-news-icons.svg) 0 -120px no-repeat; 
+}
+
+.get-in-touch .widget-news-address {
+	background: url(../img/svg/widget-news-icons.svg) 0 -150px no-repeat;
+}
+/*---------------------------------------------------------------------------
+						End contact.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin case-studies.html
+---------------------------------------------------------------------------*/
+.left-control {
+	background: url(../img/svg/carousel-control-arrows.svg) 0 0 no-repeat;
+}
+
+.left-control:hover {
+	background: url(../img/svg/carousel-control-arrows.svg) 0 -40px no-repeat;
+}
+
+.right-control {
+	background: url(../img/svg/carousel-control-arrows.svg) 0 -20px no-repeat;
+}
+
+.right-control:hover {
+	background: url(../img/svg/carousel-control-arrows.svg) 0 -60px no-repeat;
+}
+/*---------------------------------------------------------------------------
+						End case-studies.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin gallery-columns2,3.html
+---------------------------------------------------------------------------*/
+.view span.mask-icon {
+   background: url(../img/svg/benefits-arrow-white.svg) center no-repeat;
+}
+
+.pagination > ul > li:first-child a,
+.pagination > ul > li.disabled:first-child a:hover {
+	background: url(../img/svg/bxslider-arrows.svg) 0 0 no-repeat;
+}
+
+.pagination > ul > li:first-child a:hover {
+	background: url(../img/svg/bxslider-arrows.svg) 0 -80px no-repeat;
+}
+
+.pagination > ul > li > .next-arrow,
+.pagination > ul > li.disabled > .next-arrow:hover { 
+	background: url(../img/svg/bxslider-arrows.svg) 0 -40px no-repeat;
+}
+
+.pagination > ul > li > .next-arrow:hover {
+	background: url(../img/svg/bxslider-arrows.svg) 0 -120px no-repeat;
+}
+/*---------------------------------------------------------------------------
+						End gallery-columns2,3.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin gallery-random.html
+---------------------------------------------------------------------------*/
+.foto-gallery {
+	background-image: url(http://placehold.it/3840x716);
+	background-size: 1920px 358px;
+}
+
+.arrow-link {
+	background: url(../img/svg/benefits-arrow-white.svg) 0 0 no-repeat;
+}
+
+.grey-img .arrow-link {
+	background: url(../img/svg/benefits-arrow-hover.svg) 0 0 no-repeat;
+}
+/*---------------------------------------------------------------------------
+						End gallery-random.html
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+						Begin blog-style1,2,3.html
+---------------------------------------------------------------------------*/
+.foto-blog-style {
+	background-image: url(http://placehold.it/3840x716);
+	background-size: 1920px 358px;
+}
+
+.holder-author-photo {
+	background-image: url(../img/holder-post-photo_2.png);
+	background-size: 100px 100px;
+}
+
+.categori-list > li {
+	list-style-image: url(../img/svg/categories-arrow.svg);
+}
+
+.categori-list > li:hover {
+	list-style-image: url(../img/svg/categories-arrow-hover.svg);
+}
+
+.link-icon-arrow {
+	background: url(../img/svg/download-button-arrow.svg) 0 0 no-repeat;
+}
+
+.link-icon-arrow:hover {
+	background: url(../img/svg/download-button-arrow.svg) 0 -40px no-repeat;
+}
+
+.comments-icon {
+	background: url(../img/svg/coments-icon.svg) 0 0 no-repeat;
+}
+
+.blog-styly-block .link-icon-arrow {
+	background: url(../img/svg/download-button-arrow.svg) 0 -80px no-repeat;
+}
+
+.blog-styly-block .link-icon-arrow:hover {
+	background: url(../img/svg/download-button-arrow.svg) 0 -60px no-repeat;
+}
+/*---------------------------------------------------------------------------
+						End blog-style1,2,3.html
+---------------------------------------------------------------------------*/
+
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!--[if lt IE 8]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  				
+<![endif]-->																	<!--Edge mode for IE8+-->
+<title>Appic - Oooops!</title>													<!--Change Title-->
+<meta name="description" content="describe your page">							<!--Change content-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">			<!--Scale a webpage to a 1:1 pixel-->
+<link href="http://fonts.googleapis.com/css?family=Oswald|PT+Sans:400,700,400italic" rel="stylesheet">	<!--Fonts styles-->
+<link rel="stylesheet" href="css/bootstrap.min.css">								<!--Bootstrap styles-->
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">						<!--Bootstrap styles-->
+
+<link rel="stylesheet" href="css/style.css">									<!--Custom styles-->
+<link rel="stylesheet" href="css/retina.css">                 					<!--Retina styles-->
+  <!-- HTML5 shim for IE backwards compatibility -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  			
+</head>
+<body class="page-404 text-center">
+	<!--[if lt IE 8]>
+    	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+<!--**************************Begin Header*****************************-->
+<header>
+    <div class="logo">
+        <a href="index.html">
+        <!--<img src="img/logo.png" alt="Appic logo"> !!!remove comments for choose image and add comment to h1!!!-->
+            <h1 class="logo-text">A<span class="blue-text">pp</span>ic</h1>					
+        </a>
+    </div>
+    <!-- box shadow for IE 8 -->
+    <!--[if lt IE 9]>
+      <div class="shadow-ie8"></div>
+    <![endif]-->
+</header><!--**************************End Header*****************************-->
+<section class="content-404">
+	<h3 class="title-404">Oooops!</h3>
+    <p class="simple-text-14">Looks like something broke!  The page you were looking for is not here.<br/>Go <a href="index.html" class="link-404">home</a> or try a search:</p>
+    <form name="search-form" id="search-form" class="search-wrap" action="#">
+        <input type="search" name="input-search" id="input-search" placeholder="type your request" value="">
+        <input type="submit" id="submit-button" class="submit-button">
+    </form>
+</section>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	<!--Script jQuery-->
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script> 	<!--Script jQuery-->
+<script src="js/vendor/jquery-migrate.js"></script>								<!--Script jQuery for old version jQuery-->
+<script src="js/vendor/bootstrap.min.js"></script>								<!--Script Bootstrap-->
+<script src="js/vendor/modernizr.custom.91224.js"></script>						<!--Script Modernizr-->
+
+<script>
+$(document).ready(function() {
+	
+//placeholder for old brousers and IE
+if(!Modernizr.input.placeholder){             
+ 
+  $('[placeholder]').focus(function() {
+   var input = $(this);
+   if (input.val() == input.attr('placeholder')) {
+    input.val('');
+    input.removeClass('placeholder');
+   }
+  }).blur(function() {
+   var input = $(this);
+   if (input.val() == '' || input.val() == input.attr('placeholder')) {
+    input.addClass('placeholder');
+    input.val(input.attr('placeholder'));
+   }
+  }).blur();
+  $('[placeholder]').parents('form').submit(function() {
+   $(this).find('[placeholder]').each(function() {
+    var input = $(this);
+    if (input.val() == input.attr('placeholder')) {
+     input.val('');
+    }
+   })
+  });
+ }
+
+
+});
+</script>
+	
+</body>
+</html>

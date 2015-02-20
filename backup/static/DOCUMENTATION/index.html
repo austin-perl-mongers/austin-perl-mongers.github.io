@@ -1,0 +1,1184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Appic HTML Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		.container img{
+			max-width: 100%;
+		}
+	</style>
+	
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Appic - Bussines &amp; Technology HTML Template&rdquo; Documentation by &ldquo;Olia Gozha&rdquo; v2.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Appic - Bussines &amp; Technology HTML Template 2.0&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 08/04/2013<br>
+					Last updated: 08/16/2014<br>
+					By: Designzway<br>
+					Email: <a href="mailto:olia@gozha.net">olia@gozha.net</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form <a href="http://themeforest.net/user/olechka">here</a>. Thank you so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#introduction">Introduction</a></li>
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#navlogo">Navigation and Logos</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#fontssused">Fonts used</a></li>
+			<li><a href="#shortcode"> Shortcode and patterns</a></li>
+			<li><a href="#faqs">FAQs</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="introduction"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Thank you so much for purchasing this template called <strong>Appic</strong>. This is a <strong>Responsive</strong> <strong>HTML5</strong>/<strong>CSS3</strong> template. Please feel free to contact us if you have a question or a problem about this template. No guarantees, but we will do our best to provide you with the best possible assistance.</p>
+				
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>B) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		
+		<h4>HTML Files</h4>
+		<ul>
+    		<li><em>index.html</em> - Home</li>
+            <li><em>index2.html</em> - Home with revolution slider</li>
+    		<li><em>about.html</em> - About</li>
+            <li><em>coming-soon.html</em> - Coming soon</li>
+            <li><em>how-it-works.html</em> - How it works</li>
+            <li><em>page-elements.html</em> - Page elements</li>
+            <li><em>404.html</em> - 404</li>
+    		<li><em>services.html</em> - Services</li>
+ 			<li><em>prices.html</em> - Price plans</li>
+    		<li><em>blog-style1.html</em> - Blog style 1</li>
+    		<li><em>blog-style1-full.html</em> - Blog style 1 fullwidth layout</li>
+    		<li><em>blog-style2.html</em> - Blog style 2</li>
+    		<li><em>blog-style2-full.html</em> - Blog style 2 fullwidth layout</li>
+    		<li><em>blog-style3.html</em> - Blog style 3</li>
+    		<li><em>single-post.html</em> - Single post</li>
+    		<li><em>single-post-full.html</em> - Single post fullwidth layout</li>
+    		<li><em>gallery-random.html</em> - Gallery random</li>
+    		<li><em>gallery-columns2.html</em> - Gallery columns 2</li>
+    		<li><em>gallery-columns3.html</em> - Gallery columns 3</li>
+    		<li><em>case-studies.html</em> - Case studies</li>
+    		<li><em>contact.html</em> - Contact</li>
+    		<li><em>shop-catalogue.html</em> - Shop-catalogue</li>
+    		<li><em>single-product.html</em> - Product page</li>
+		</ul>
+		
+		<h4>General HTML structure</h4>
+		<p>This template is based on a default bootstrap 3.2.0 grid system. 
+        All of the information within the main content area is nested within a body tag. 
+        The general template structure is  pretty the same throughout the template. Here is the general structure of main page.</p>
+		
+<pre class="brush: html">
+<!--**************************Begin Header*****************************-->
+<header>
+    <div class="top-nav">
+        ....
+    </div>
+    <div class="main-nav-wrap">
+   		....
+    </div>
+</header><!--**************************End Header*****************************-->
+
+
+<!--**************************Begin Call to action*****************************-->
+<div class="circle-info-buttons">
+		....
+</div><!--**************************End Call to action*****************************-->
+
+
+<!--**************************Begin Promobox*****************************-->
+	<div class="promobox">
+    	....
+    </div><!--**************************End Promobox*****************************-->
+    
+    
+<!--**************************Begin Benefits*****************************-->    
+    <section class="container benefits">
+    	....
+    </section><!--**************************End Benefits*****************************-->
+    
+    
+<!--**************************Begin Services*****************************-->    
+    <section class="services services--preview">
+    	<div class="container">
+    		....
+    	</div>
+    </section><!--**************************End Services*****************************-->
+    
+    
+<!--**************************Begin Universe*****************************-->    
+    <section class="universe hidden-xs">
+                       ....
+    </section><!--**************************End Universe*****************************-->
+    
+       
+<!--**************************Begin Client-say*****************************-->    
+    <section class="container client-says">
+    	....
+    </section><!--**************************End Client-say*****************************-->
+    
+    
+<!--**************************Begin Posts & Why choose*****************************-->    
+    <section class="container divided-section">
+        ....
+    </section><!--**************************End Posts & Why choose*****************************-->
+
+
+<!--**************************Begin Footer*****************************-->     
+<footer class="footer-wrapper">
+		<!--Begin footer widget-->
+		<div class="container footer-widgets">
+        	....
+   		</div>
+		<!--End footer widget -->
+
+		<!--Begin footer secondary -->
+		<div class="footer-secondary">
+			....
+		</div>
+		<!--End footer secondary -->
+</footer><!--**************************End Footer*****************************-->
+</pre>
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		
+		<h4>Styles</h4>
+		
+<pre class="brush: html">
+
+<!-- CSS
+================================================== -->
+
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css">	<!--jQuery UI styles-->
+<link rel="stylesheet" href="external/gozha-nav/gozha-nav.css">					<!--Custom mobile styles-->
+<link rel="stylesheet" href="external/colorbox/colorbox.css">					<!--Colorbox styles-->
+<link rel="stylesheet" href="external/magnific-popup/magnific-popup.css">		<!--Magnific Popup styles-->						
+<link rel="stylesheet" href="external/rs-plugin/css/settings.css">				<!--Revolution slider styles-->
+<link rel="stylesheet" href="external/swiper/idangerous.swiper.css">            <!--Swiper slider styles-->
+<link rel="stylesheet" href="external/bootstrap-select/bootstrap-select.css">	<!--Bootsrap select styles-->
+<link rel="stylesheet" href="css/touch.css">									<!--Styles fot touch devices-->
+<link rel="stylesheet" href="css/style.css">									<!--Template Styles-->
+		
+</pre>
+
+		<p>We used 9 CSS files in this theme. We've merged styles for improving download speed template (for decreasing http queries).</p>
+
+		<p>Lets take a close look at our stylesheet files.</p>
+		
+		<h5>settings.css</h5>
+		<p>This stylesheet contains  <a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">Revolution slider styles</a> .</p>
+
+		<h5>gozha-nav.css</h5>
+		<p>It contains styles for menu view. It has two formats of main menu view: a) full format (opened) menu – the menu that is used for large and medium displays (monitors, laptops, tablets (landscape orientation)); b) narrow format (compact) menu – styles that are used for small screens (phones, tablets (portrait orientation)). Transition point value is 768 pixels (is used as max-width condition for media query).</p>
+
+		<h5>touch.css</h5>
+		<p>Rules for touchscreen devices. The main purpose of this file is to provide certain hacks for mobile devices and to cancel animation used for desktop version.</p>
+
+		
+		<h5>style.css</h5>
+		<p>Style.css is generated file of sets less files. It partly include 12-columns responsive grid system based on a default bootstrap 3.2.0 grid system &amp; bootstrap styles and all custom style rules. </p>
+
+		<h6>Less files structure:</h6>
+
+                    <ul>
+                        <li>base group:
+                            <ul>
+                                <li>normalize.less - a modern, HTML5-ready alternative to СSS resets;</li>
+                                <li>vars.less - collection of custom variables (colors and fonts mostly);</li>
+                                <li>base.less - custom rules for unclassed element. some most general rules. font init place;</li>
+                                <li>../external/bootstrap/less/bootstrap.less - grid system based on a default bootstrap 3.2.0 grid system &amp; bootstrap styles for componetns;</li>
+                            </ul>
+                        </li>
+                        <li>object group:
+                            <ul>
+                                <li>objects.less -  main file which contains styles for patterts;</li>
+                            </ul>
+                        </li>
+                        <li>state group:
+                            <ul>
+                                <li>state.less - contains rules for all patterns variations and responsive block.</li>
+                                <li>responsive.less - contains responsive rules for all template (all media query rules).</li>
+                            </ul>
+                        </li>
+                    </ul>
+        	
+		<hr>
+		
+		<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports 29 Javascript files.</p>
+		
+<pre class="brush: html">
+<!-- Javascript Files
+================================================== -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!--Script jQuery-->	
+<script>window.jQuery || document.write('<script src="external/jquery/jquery-1.11.0.min.js"><\/script>')</script> <!--Script jQuery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>	<!--Script jQuery UI-->
+<script src="external/jquery/jquery-migrate-1.2.1.min.js"></script>			<!--Script jQuery for old version jQuery-->
+<script src="external/bootstrap/js/bootstrap.min.js"></script>				<!--Bootstrap JavaScript-->
+<script src="external/modernizr/modernizr.custom.91224.js"></script>		<!--Script Modernizr-->
+<script src="external/jquery-event/jquery.event.drag-2.2.js"></script>		<!--Script jquery event Drag-->
+<script src="external/jquery-event/jquery.event.drop-2.2.js"></script>		<!--Script jquery event Drop-->
+<script src="external/jquery-easing/jquery.easing.1.3.js"></script>			<!--Script jquery Easing-->
+<script src="external/jquery-roundabout/jquery.roundabout.min.js"></script>	<!--Script Roundabout-->
+
+<script src="external/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>		<!--Script Revo slider -->	
+<script src="external/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>	<!--Script Revo slider -->
+<script src="external/swiper/idangerous.swiper.min.js"></script>			<!--Script Swiper slider -->
+<script src="external/jquery-bxslider/jquery.bxslider.min.js"></script>		<!--Script Bxslider -->	
+
+<script src="external/gozha-nav/jquery.mobile.menu.js"></script>			<!--Script Mobile menu-->
+<script src="external/jquery-twitter/jquery.twitter.js"></script>			<!--Script Twitter-->
+<script src="external/jflickrfeed/jflickrfeed.js"></script>					<!--Script Widget Flikr-->
+<script src="external/colorbox/jquery.colorbox.js"></script>				<!--Script Сolorbox-->
+<script src="external/magnific-popup/jquery.magnific-popup.min.js"></script> <!--Magnific Popup-->
+<script src="external/jquery-timeline/jquery.timelineG.js"></script>		<!--Script Timeline-->
+<script src="external/masonry/masonry.pkgd.min.js"></script> 				<!--Script Masonry-->
+<script src="external/jquery-fitvids/jquery.fitvids.js"></script>			<!--Script Fitvids -->
+<script> var addthis_config = {"data_track_addressbar":true};</script>   						<!--Script AddThis -->
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-536c916f5d4a9397"></script>		<!--Script AddThis -->	
+<script src="external/jquery-knob/jquery.knob.min.js"></script>				<!--Script Knob-->
+<script src="external/countdown/count.down.js"></script>					<!--Script Count down-->
+<script src="external/bootstrap-select/bootstrap-select.js"></script>		<!--Script Selectbox-->	
+<script src="external/raty/jquery.raty.js"></script>						<!--Script Raty-->
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>		<!-- Google map -->	
+
+<script src="js/form.js"></script>                     						<!--Script Forms -->
+<script src="js/custom.js"></script>
+</pre>
+
+		<p>Let's take a close look at our javascript files.</p>
+
+        <br>
+        <p><strong>The part of the scripts are basic scripts </strong>and are used in all template pages. It includes: </p>
+		
+		<h5>jquery-1.11.1.min.js</h5>
+		<p><a href="http://jquery.com/">jQuery</a> is a multi-browser JavaScript library designed to simplify the client-side scripting of HTML.</p>
+		
+		<h5>jquery-migrate-1.1.1.min.js</h5>
+		<p>jQuery migrate plugin which enables some deprecated properties.</p>
+
+		<h5>jquery.ui.touch-punch.min.js</h5>
+        <p>jQuery UI Touch Punch enables the use of touch events on sites using the jQuery UI user interface library.</p>
+
+		<h5>bootstrap.js</h5>
+        <p>Powerful mobile-first front-end framework for web development. You can get more information on official site  <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>.The project uses the range of elements (accordions, tabs, tooltips etc.) which are based on use of this framework. You can find description of these elements <a href="http://getbootstrap.com/javascript/">here</a></p>
+
+		<h5>modernizr.custom.91224.js</h5>
+		<p><a href="http://modernizr.com/">Modernizr</a> is a JavaScript library that detects HTML5 and CSS3 features in the user's browser.</p>
+		
+		<h5>jquery.event.drop-2.2.js, jquery.event.drag-2.2.js</h5>
+		<p>A jquery special event plugins that makes the task of adding complex drop interactions, to any element, simple and powerful.</p>
+
+		<h5>jquery.easing.min.js</h5>
+		<p>Easing plugin for creating effects.</p>
+
+		<h5>jquery.roundabout.js</h5>
+		<p>jQuery plugin that easily converts unordered lists &amp; other nested HTML structures into entertaining, interactive, turntable-like areas.</p>
+		
+		<br>
+		<strong>2 different sliders</strong> for realization main slider on home page. Besides, it uses many other functional sliders on inner pages. If slider settings do not suit your project you can switch on documentation of each of them and change corresponding pairs of options-value according to your needs.</p>
+		<h5>jquery.themepunch.plugins.min.js and jquery.themepunch.revolution.min.js</h5>
+        <p>Revolution slider. Responsive jQuery Plugin. Find documentation <a href="assets/slider_documentation/documentation/documentation.html">here</a>.</p>
+
+        <h5>idangerous.swiper.js</h5>
+        <p>Swiper slider. Swiper - is ultra lightweight mobile touch slider with hardware accelerated transitions (where supported) and amazing native behavior. Find documentation <a href="http://www.idangero.us/sliders/swiper/api.php">here</a>.</p>
+
+
+		<br>
+        <p><strong>Some specific plugins </strong>have been also used. The part of them is used on each template page. Another part -  in some pages for specific needs.</p>
+		<h5>jquery.mobile.menu.js</h5>
+        <p>Designer’s plugin for mobile menu. It has two patterns of interaction with main menu: a) full format (opened) menu – the menu that is used for large and medium displays (monitors, laptops, tablets (landscape orientation)). b) narrow format (compact) menu – the menu which is used for displaying in small screens (phones, tablets(portrait orientation)).For mobile view  initially menu looks like switch icon. After you open it every link is divided into two parts. Main part is a direct link to the menu item. Additional link (which is marked by plus icon in closed state and minus icon in open state) enables you to open context menu list. The menu is well adopted for touch devices since touchstart event is also performed.</p>
+
+		<h5> jquery.twitter.js</h5>
+		<p>Script that allows to download on website recent news from twitter account. You can find information on how to adjust it to your own account in FAQs.</p>
+		
+		<h5>jflickrfeed.js</h5>
+		<p>This plugin works by pulling a JSON feed from Flickr and applying the data it gets back to a template.  For example, we can generate this list of pictures. <a href="http://www.newmediacampaigns.com/blog/a-jquery-flickr-feed-plugin">Details</a>.</p>
+		
+        <h5>jquery.colorbox.js</h5>
+		<p>A lightweight customizable lightbox plugin for jQuery.</p>
+		
+		<h5>jquery.magnific-popup.min.js</h5>
+        <p>Magnific Popup is a responsive lightbox &amp; dialog script with focus on performance and providing best experience for user with any device. <a href="http://dimsemenov.com/plugins/magnific-popup/documentation.html">Plugin documentation</a> have full information about customization.</p>
+        
+        <h5>jquery.timelineG.js</h5>
+        <p>jQuery Timeline Plugins allows set up easily add beautiful, interactive timelines.</p>
+        
+        <h5>masonry.pkgd.min.js</h5>
+        <p>Masonry is a JavaScript grid layout library. It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. </p>
+
+        <h5>jquery.fitvids.js</h5>
+        <p>A lightweight, easy-to-use jQuery plugin for fluid width video embeds.</p>
+        
+        <h5>addthis_widget.js</h5>
+        <p>AddThis sharing menu increases sharing by more efficiently personalizing the services to which your visitors share.</p>
+        <h5>jquery.knob.js</h5>
+        <p>Nice, downward compatible, touchable, jQuery dial. More information find <a href="http://anthonyterrien.com/knob/">here</a></p>
+
+        <h5>count.down.js</h5>
+        <p>A simple JavaScript API for producing an accurate, intuitive description of the timespan between two Date instances. <a href="http://countdownjs.org/">Link</a></p>
+		
+		<h5>bootstrap-select.js</h5>
+        <p>A custom select for Bootstrap using button dropdown. <a href="http://silviomoreto.github.io/bootstrap-select/">Details here</a></p>
+
+        <h5>jquery.raty.js</h5>
+        <p>jQuery Raty is a plugin that generates a customizable star rating. More information about setting you can find <a href="http://wbotelhos.com/raty">here</a></p>
+
+        <h5>maps.google.com/maps/api/js</h5>
+        <p>Script serves to add google map on template page. You can find step by step instruction of map insertion in <a href="https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map">here.</a></p>
+
+        <h5>jquery.form.js</h5>
+		<p>This script contains javascript part for forms (contact, book a table, order catering).</p>
+
+		<h5>custom.js</h5>
+        <p>Custom file which contains all plugins establish for relative elements of every page. The file contains set up used on every page and set up for each separate page as a function. You can call functions on every separate page on “script” tag on .html files. Don't forget to call the fuction, it uses patterns such as "slider".</p>
+		
+		<hr>
+		
+		<h3 id="navlogo"><strong>E) Navigation and Logos</strong> - <a href="#toc">top</a></h3>
+		
+		<h4>Header Logo</h4>
+		<p>The Logo is nested within a div with id of <strong>logo</strong>. As you can see there are two kind of logos: <em>Image based</em> (by default) and <em>Text based</em>. You can choose prefered variant by removing html comments. Don't forget to comment or delete another variant. </p>
+		
+<pre class="brush: html">
+<!-- Logo -->
+	<div class="logo pull-left">
+	    <a href="index.html">
+	     	<!-- Remove comments to choose image and add comment to h1 -->
+	     	<!--<img class="logo-img" src="images/logo.png" alt="Appic logo">-->	
+	        <h1 class="logo-text">A<span class="text-highlight">pp</span>ic</h1>			
+	    </a>
+	</div>
+<!-- End Logo -->
+</pre>
+		
+		<h4>Navigation Menu</h4>
+		<p>The page navigation links such as Home, Pages, Contact etc are included within a nav-tag with id <strong>navigation-box</strong>.</p>
+		
+										<pre class="brush: html">
+					<!-- Main navigation-->
+					<div class="pull-right" id="navigation-box">
+	                    <a id="navigation-toggle" href="#">
+	                        <span class="menu-icon"></span>
+	                    </a>
+	                    <ul id="navigation">
+	                        <li class="active-item">
+	                            <span class="sub-nav-toggle plus"></span>
+	                            <a href="index.html">Home</a>
+	                            <ul>
+	                                <li><a href="index2.html">Home with revo slider</a></li>
+	                                <li><a href="index3.html">Home with revo slider 2</a></li>
+	                            </ul>
+	                        </li>
+	                        <li><a href="about.html">About</a></li>
+	                        <li>
+	                            <span class="sub-nav-toggle plus"></span>
+	                            <a href="#">Pages</a>
+	                            <ul>
+	                                <li><a href="coming-soon.html">Coming soon</a></li>
+	                                <li><a href="how-it-works.html">How it works</a></li>
+	                                <li><a href="page-elements.html">Page elements</a></li>
+	                                <li><a href="404.html">404</a></li>
+	                            </ul>
+	                        </li>
+	                        <li>
+	                            <span class="sub-nav-toggle plus"></span>
+	                            <a href="services.html">Services</a>
+	                            <ul>
+	                                <li><a href="prices.html">Price plans</a></li>
+	                            </ul>
+	                        </li>
+	                        <li>
+	                        	<span class="sub-nav-toggle plus"></span>
+	                            <a href="#">Blog</a>
+	                            <ul>
+	                                <li><a href="blog-style1.html">Blog style 1</a></li>
+	                                <li><a href="blog-style1-full.html">Blog style 1 fullwidth</a></li>
+	                                <li><a href="blog-style2.html">Blog style 2</a></li>
+	                                <li><a href="blog-style2-full.html">Blog style 2 fullwidth</a></li>
+	                                <li><a href="blog-style3.html">Blog style 3</a></li>
+	                                <li><a href="single-post.html">Single post</a></li>
+	                                <li><a href="single-post-full.html">Single post fullwidth</a></li>
+	                            </ul>
+	                        </li>
+	                        <li>
+	                            <span class="sub-nav-toggle plus"></span>
+	                            <a href="#">Gallery</a>
+	                            <ul>
+	                                <li><a href="gallery-random.html">Gallery random</a></li>
+	                                <li><a href="gallery-columns2.html">Gallery columns 2</a></li>
+	                                <li><a href="gallery-columns3.html">Gallery columns 3</a></li>
+	                                <li><a href="case-studies.html">Case studies</a></li>
+	                            </ul>
+	                        </li>
+	                        <li>
+	                            <span class="sub-nav-toggle plus"></span>
+	                            <a href="shop-catalogue.html">Shop</a>
+	                            <ul>
+	                                <li><a href="single-product.html">Single product</a></li>
+	                            </ul>
+	                        </li>
+	                        <li><a href="contact.html">Contact</a></li>
+	                    </ul>
+	                </div>
+					<!-- Navigation / End -->
+					</pre>
+		
+		<hr>
+		
+		
+		
+		<h3 id="psdFiles"><strong>F) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Template contains 21 psds with this theme:</p>
+		
+		<ol>
+			<li> Home page </li> 
+                <li> Home page hovers</li>
+                <li> About us </li>
+                <li> How it works</li>
+                <li> Services  </li>
+                <li> Price page </li>
+                <li> Blog (3 files)</li>
+                <li>Our staff</li>
+                <li> Single post</li>
+				<li> Gallery (3 files)</li>
+                <li> Case study</li>
+				<li> Contact </li>
+				<li> Page elements</li>
+                <li> 404 error page</li>
+                <li> Coming soon page</li>
+                <li> Homepage ipad view</li>
+                <li> Homepage iphone view</li>
+                <li> Homepage big slider</li>
+                <li> Shop catalogue</li>
+                <li> Shop catalogue lis</li>
+                <li> Shop single product</li>
+                
+
+			
+		</ol>
+		
+		<p>All psds are sliced and it's easy to reskin this template.</p>
+		
+		<hr>
+		
+		<h3 id="fontssused"><strong>G) Fonts Used</strong> - <a href="#toc">top</a></h3>
+		<p>We have used three types of fonts in this template.</p>
+		
+		<ol>
+			<li>Font: PT-Sans (Free download at: <a href="http://www.fontsquirrel.com/fonts/PT-Sans" target="_blank">http://www.fontsquirrel.com/fonts/PT-Sans</a>)</li>
+			<li>Font: Oswald (Free download at: <a href="http://www.fontsquirrel.com/fonts/oswald" target="_blank">http://www.fontsquirrel.com/fonts/oswald</a>)</li>
+			<li>Iconic font: Font Awresome  (Free download at: <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">http://fortawesome.github.io/Font-Awesome/</a>)</li>
+			
+		</ol><br/>
+
+		<hr>
+
+		<h3 id="shortcode"><strong>H) Shortcode and patterns</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This template is based on scalable and modular principles. Most elements are build like code templates.You can put this templates in any place in the page. It gives a default pattern view. You can add an additional class (class modificator) to the pattern root tag. This will give a different view.</p>
+
+		<h4>Accordions</h4>
+		<p>Three are 3 kinds of shortcodes for accordions. Block class "accordion" will represent default view accordion.</p>
+		<pre class="brush: html">
+			<!-- Code -->
+
+				<div class="panel-group accordion" id="accordion">
+
+					<!-- Accordion item -->
+					<div class="panel panel-default">
+					    <div class="panel-heading">
+                            <h4 class="panel-title">
+					        	<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					        		<span class="marker"></span>
+					          		Article title goes here
+					        	</a>
+					        </h4>
+					    </div>
+					    <div class="panel-collapse collapse in" id="collapseOne">
+					      	<div class="panel-body">
+					       		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet quam augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+					    	</div>
+					    </div>
+					</div>
+					<!-- End accordion item -->
+
+					<!-- Accordion item -->
+					<div class="panel panel-default">
+					    <div class="panel-heading">
+                            <h4 class="panel-title">
+					        	<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+					        		<span class="marker"></span>
+						          	Article title goes here
+					        	</a>
+					        </h4>
+					    </div>
+					    <div class="panel-collapse collapse" id="collapseTwo">
+					      	<div class="panel-body">
+					        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet quam augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+					      	</div>
+					    </div>
+					  </div>
+					<!-- End accordion item -->
+
+					<!-- Accordion item -->
+					<div class="panel panel-default">
+					    <div class="panel-heading">
+                            <h4 class="panel-title">
+					        	<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+					        		<span class="marker"></span>
+						          	Article title goes here
+					        	</a>
+					        </h4>
+					    </div>
+					    <div class="panel-collapse collapse" id="collapseThree">
+					      	<div class="panel-body">
+					        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet quam augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+					      	</div>
+					    </div>
+					  </div>
+					<!-- End accordion item -->
+
+					<!-- Accordion item -->
+					<div class="panel panel-default">
+					    <div class="panel-heading">
+                            <h4 class="panel-title">
+					        	<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+					        		<span class="marker"></span>
+						          	Article title goes here
+					        	</a>
+					        </h4>
+					    </div>
+					    <div class="panel-collapse collapse" id="collapseFour">
+					    	<div class="panel-body">
+					       		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet quam augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+					    	</div>
+					    </div>
+					</div>
+					<!-- End accordion item -->
+				</div>
+        </pre>
+		<p>Result:</p>
+		<img src="images/accordion1.png" alt="">
+
+		<p>Second variant of accordion presentation. You shoud add to block class-modificator "accordion--secondary".</p>
+		<p>Result:</p>
+		<img src="images/accordion2.png" alt="">
+
+		<p>Third variant of accordion presentation. You shoud add to block class-modificator "accordion--mixed".</p>
+		<p>Result:</p>
+		<img src="images/accordion3.png" alt="">
+
+		<h4>Tabs</h4>
+		<p>Tabs shortcodes build base on tabs components from bootstrap. Block class "tabs".</p>
+		<pre class="brush: html">
+			<!-- Code -->
+
+			<div class="tabs">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+					    <li class="active"><a data-toggle="tab" href="#efficiency">Time efficiency</a></li>
+					    <li><a data-toggle="tab" href="#support">Live support</a></li>
+					    <li><a data-toggle="tab" href="#customizing">Customizing widget</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+					  <div class="tab-pane active" id="efficiency">
+							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+	                        <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Etiam porttitor dolor quis tortor elementum a sollicitudin sem cursus.</p>
+	                        <p>Nulla et odio id odio gravida lacinia ac et orci. Vestibulum lectus dolor, fringilla sit amet tempus vitae, scelerisque eget lectus. Sed nisi augue, pharetra vitae fringilla in, pulvinar molestie velit. In sollicitudin odio felis.</p>
+					  </div>
+					  <div class="tab-pane" id="support">
+	                        <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+	                        <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Etiam porttitor dolor quis tortor elementum a sollicitudin sem cursus.</p>
+	                        <p>Nulla et odio id odio gravida lacinia ac et orci. Proin gravida nibh vel velit auctor aliquet. Vestibulum lectus dolor, fringilla sit amet tempus vitae, scelerisque eget lectus. Sed nisi augue, pharetra vitae fringilla in, pulvinar molestie velit. In sollicitudin odio felis.</p>
+	                    </div>
+					  <div class="tab-pane" id="customizing">
+	                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p> 
+	                        <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Etiam porttitor dolor quis tortor elementum a sollicitudin sem cursus.</p>
+	                        <p>Vestibulum lectus dolor, fringilla sit amet tempus vitae, scelerisque eget lectus. Sed nisi augue, pharetra vitae fringilla in, pulvinar molestie velit. In sollicitudin odio felis.</p>
+	                    </div>
+					</div>
+				</div>
+        </pre>
+
+		<p>Result:</p>
+		<img src="images/tabs1.png" alt="">
+
+		<p>Class-modificator "tabs--vertical".</p>
+		<p>Result:</p>
+		<img src="images/tabs2.png" alt="">
+
+		<h4>Alerts</h4>
+        <p>There are 4 kind of alert. They have block class "alert". He add positioning set of rules. Also you have 4 classes-modificator for change alert color scheme: "alert-success", "alert-info", "alert-danger", "alert-warning".</p>
+
+        <pre class="brush: html">
+			<!-- Code -->
+			<div class="col-sm-3">	
+				<div class="alert alert-danger alert-dismissable">
+					<button class="close" data-dismiss="alert" type="button" aria-hidden="true">&times;</button>
+					Error! Nullam sed augue id dolor
+				</div>
+			</div>
+			<div class="col-sm-3">	
+				<div class="alert alert-warning alert-dismissable">
+					<button class="close" data-dismiss="alert" type="button" aria-hidden="true">&times;</button>
+					Notice! Nullam sed augue id dolor
+				</div>
+			</div>
+			<div class="col-sm-3">	
+				<div class="alert alert-info alert-dismissable">
+					<button class="close" data-dismiss="alert" type="button" aria-hidden="true">&times;</button>
+					Info. Nullam sed augue id dolor
+				</div>
+			</div>
+			<div class="col-sm-3">	
+				<div class="alert alert-success alert-dismissable">
+					<button class="close" data-dismiss="alert" type="button" aria-hidden="true">&times;</button>
+					Success! Nullam sed augue id dolor
+				</div>
+			</div>
+        </pre>
+
+		<p>Result:</p>
+		<img src="images/alert.png" alt="">
+
+		<h4>Tables</h4>
+		<p>Shortcode for table presentation. It is wrapped tag div with class "table-responsive". This give opportunity add scroll for tables on mobile devices.</p>
+
+		<pre class="brush: html">
+			<!-- Code -->
+			<div class="table-responsive"> 
+			        <table class="table">
+			        	<colgroup class="col-width">
+			            <colgroup class="col-width">
+			            <colgroup class="col-width">
+			            <colgroup class="col-width">
+			            <colgroup class="col-width">
+			            <colgroup class="col-width">
+			            <thead>
+			                <tr>
+			                    <th>Time efficiency</th>
+			                    <th>Cost reduction</th>
+			                    <th>Product sales</th>
+			                    <th>Activity</th>
+			                    <th>Interest rate</th>
+			                    <th>Vestibulum</th>
+			              	</tr>
+			            </thead>
+			            <tbody>
+			             	<tr>
+			                	<td>Lorem ipsum dolor sit</td>
+			                	<td>Lorem ipsum dolor sit</td>
+			                    <td>523</td>
+			                	<td>1%</td>
+			                    <td>-</td>
+			                	<td>Proin at metus nec erat aliquet.</td>
+			              	</tr>
+			                <tr>
+			                	<td>Nulla eget libero felis</td>
+			                	<td>Nulla eget libero felis</td>
+			                    <td>63</td>
+			                	<td>23%</td>
+			                    <td>-</td>
+			                	<td>23%</td>
+			              	</tr>
+			                <tr>
+			                	<td>Ut lacinia tellus a libero</td>
+			                	<td>Ut lacinia tellus a libero</td>
+			                    <td>12</td>
+			                	<td>4%</td>
+			                    <td>4%</td>
+			                	<td>Nulla nec porta tellus.</td>
+			              	</tr>
+			                <tr>
+			                	<td>Maecenas ornare lorem</td>
+			                	<td>Maecenas ornare lorem</td>
+			                    <td>87</td>
+			                	<td>90%</td>
+			                    <td>+</td>
+			                	<td>Vestibulum leo ligula, consequat.</td>
+			              	</tr>
+			                <tr>
+			                	<td>Sed congue orci et</td>
+			                	<td>Sed congue orci et</td>
+			                    <td>987</td>
+			                	<td>67%</td>
+			                    <td>10%</td>
+			                	<td>67%</td>
+			              	</tr>
+			            </tbody>
+					</table>	
+				</div>
+        </pre>
+
+		<p>Result:</p>
+		<img src="images/tables.png" alt="">
+
+		<h4>Promobox</h4>
+		<p>Shortcode patters for promo block. Block class "promobox".</p>
+
+		<pre class="brush: html">
+			<!-- Code -->
+			<div class="promobox">
+		    		<p class="promobox__text">Promo box here. Praesent sed tristique massa. Aenean iaculis diam nec.</p>
+		        	<a class="btn btn--highlight btn-wider" href="#">Get Free Trial</a>
+		    </div>
+        </pre>
+
+		<p>Result:</p>
+		<img src="images/promo1.png" alt="">
+		
+		<p>Class-modificator "promobox--neutral".</p>
+		<p>Result:</p>
+		<img src="images/promo2.png" alt="">
+
+		<p>Class-modificator "promobox--dark".</p>
+		<p>Result:</p>
+		<img src="images/promo3.png" alt="">
+
+		<h4>Pagination</h4>
+		<p>Use pagination for blog page and gallery or shop catalog.</p>
+
+		<pre class="brush: html">
+			<!-- Code -->
+				<!-- Pagination -->
+		            <div class="col-sm-12">
+				        <div class="pagination">
+				            <a class="pagination__item pagination__item--previous pagination__item--disabled" href="#"></a>
+				            <a class="pagination__item pagination__item--active" href="#">1</a>
+				            <a class="pagination__item hidden-xs hidden-sm" href="#">2</a>
+				            <a class="pagination__item hidden-xs hidden-sm" href="#">3</a>
+				            <a class="pagination__item hidden-md hidden-lg pagination__item--etc" href="#">...</a>
+				            <a class="pagination__item hidden-xs hidden-sm" href="#">4</a>
+				            <a class="pagination__item" href="#">5</a>
+				            <a class="pagination__item pagination__item--next" href="#"></a>
+				        </div>
+		        	</div>
+			        <!-- End Pagination -->
+        </pre>
+
+        <p>Result:</p>
+		<img src="images/pagination.png" alt="">
+
+		<h4>Pager</h4>
+		<p>Use pager for blog page and gallery or shop catalog (just for prev and next pages).</p>
+
+		<pre class="brush: html">
+			<!-- Code -->
+				<!-- Pager -->
+                <div class="pager">
+                    <a class="pager__item pager__item--previous pager__item--disabled" href="#">Prev</a>
+                    <a class="pager__item pager__item--next" href="#">Next</a>
+                </div>
+	            <!-- End Pager -->
+        </pre>
+
+		<p>Result:</p>
+		<img src="images/pager.png" alt="">
+
+
+		<h4>Author</h4>
+		<p>Author block shortcode - useful for any kind of blog page.</p>
+
+		<pre class="brush: html">
+			<!-- Code -->
+				<!-- About author-->
+                <section class="author">
+                	<div class="author__photo triangled-box">
+						<img src="images/avatars/user-photo-4.jpg" alt="">	
+						<div class="author__name">John Doe</div>
+					</div>
+                	<div class="author__about">
+						<h4 class="author__title">About author</h4>
+                        <p>Fusce aliquet euismod luctus. Aliquam scelerisque tincidunt risus nec pellentesque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent sed tristique massa.</p>
+					</div>					
+                </section>
+                <!-- End About author-->
+        </pre>
+
+		<p>Result:</p>
+		<img src="images/author.png" alt="">
+
+		<h4>Comment area</h4>
+		<p>Comment area can be use in different page (post, single product, discution page). You can just copy and paste in approptiate place. You can combine it with form patetn.</p>
+
+		<pre class="brush: html">
+			<!-- Code -->
+				<section class="comments" id="comments">		
+                	<h3 class="decorative-lines decorated-title-margin--sm text-center"><span class="decorated-title">Comments 12</span></h3>
+
+	                <div class="comment">	 
+		                <div class="comment__image">
+		                	<img src="images/avatars/user-photo-1.jpg" alt="">
+		                </div>  
+		                <div class="comment__body"> 
+		                	<a class="comment__author" href="#">Alexander West</a>
+		                	<p class="comment__date">March 14, 2014 || 09:23 am</p>
+		                	<p class="comment__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget mi et erat venenatis vulputate non at justo. Nullam non euismod lacus.</p>
+		                	<a class="comment__reply" href="#">Reply <i class="icon-circle icon-circle--small fa fa-arrow-right"></i></a>
+		                </div>  
+	                </div>
+
+	                <div class="divider-simple"></div>
+
+	                <div class="comment">	 
+		                <div class="comment__image">
+		                	<img src="images/avatars/user-photo-default.jpg" alt="">
+		                </div>  
+		                <div class="comment__body"> 
+		                	<a class="comment__author" href="#">Mark Lim</a>
+		                	<p class="comment__date">March 14, 2014 || 09:23 am</p>
+		                	<p class="comment__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget mi et erat venenatis vulputate non at justo. Nullam non euismod lacus.</p>
+		                	<a class="comment__reply" href="#">Reply <i class="icon-circle icon-circle--small fa fa-arrow-right"></i></a>
+		                </div>  
+	                </div>
+
+	                <div class="comment comment--reply">	 
+		                <div class="comment__image">
+		                	<img src="images/avatars/user-photo-default.jpg" alt="">
+		                	<p class="comment__image__author">Author</p>
+		                </div>  
+		                <div class="comment__body"> 
+		                	<a class="comment__author" href="#">Matthew Rise</a>
+		                	<p class="comment__date">March 15, 2014 || 06:23 am</p>
+		                	<p class="comment__message">Etiam nisi magna, molestie eu elementum eget, mollis at dolor. Nulla auctor vehicula ullamcorper. Donec ac massa id augue lacinia pulvinar et vitae nulla. Aliquam pretium bibendum nisl non eleifend. Duis porttitor consectetur egestas. Sed vel vulputate orci.</p>
+		                	<a class="comment__reply" href="#">Reply <i class="icon-circle icon-circle--small fa fa-arrow-right"></i></a>
+		                </div>  
+	                </div>
+
+	                <div class="divider-simple"></div>
+	                
+	                <div class="comment">	 
+		                <div class="comment__image">
+		                	<img src="images/avatars/user-photo-2.jpg" alt="">
+		                </div>  
+		                <div class="comment__body"> 
+		                	<a class="comment__author" href="#">Anna Collins</a>
+		                	<p class="comment__date">March 13, 2014 || 03:03 pm</p>
+		                	<p class="comment__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget mi et erat venenatis vulputate non at justo. Nullam non euismod lacus.</p>
+		                	<a class="comment__reply" href="#">Reply <i class="icon-circle icon-circle--small fa fa-arrow-right"></i></a>
+		                </div>  
+	                </div>
+
+	                <div class="divider-simple"></div>
+	                
+	                <div class="comment">	 
+		                <div class="comment__image">
+		                	<img src="images/avatars/user-photo-3.jpg" alt="">
+		                </div>  
+		                <div class="comment__body"> 
+		                	<a class="comment__author" href="#">Clair Wesley</a>
+		                	<p class="comment__date">March 13, 2014 || 03:03 pm</p>
+		                	<p class="comment__message">Sed purus nisl, facilisis sed egestas dignissim, ornare ut risus. Morbi leo risus, vulputate sit amet iaculis vitae, ullamcorper eget turpis. Pellentesque porttitor, quam in porta sodales, nunc dui viverra augue, ut lacinia libero velit sed justo.</p>
+		                	<a class="comment__reply" href="#">Reply <i class="icon-circle icon-circle--small fa fa-arrow-right"></i></a>
+		                </div>  
+	                </div>
+
+	                <div class="divider-simple"></div>
+
+                    <div class="comments__more">
+                    	<a class="comments__more__link" href="#">Load later comments</a>
+                    </div>
+                </section>
+                <!-- End Comments-->
+        </pre>
+
+		<p>Result:</p>
+		<img src="images/comment.png" alt="">
+		
+
+		<h4>Form</h4>
+        <p>In this template you have default pattern for contact form. Block class is "contact-form". If you want to add this shortcode to your page, you should change an attribute "action" to "send.php" and add a link to js file "form.js".</p>
+
+        <pre class="brush: html">
+			<!-- Code -->
+				<form class="contact-form" id="contact-form" name="contact-form" method="post" action="send.php" novalidate>
+                	<input class="form__field pull-left" id="user-name" name="user-name" type="text" placeholder="Name:">
+                    <input class="form__field pull-right" id="user-email" name="user-email" type="email" placeholder="Email:">
+                    <input class="form__field pull-left" id="user-phone" name="user-phone" type="text" placeholder="Phone:">
+                    <input class="form__field pull-right clearfix" id="user-title" name="user-title" type="text" placeholder="Title:">
+                	<textarea class="form__field form__field--message" name="user-message" id="user-message" placeholder="Message:"></textarea>
+                    <button class="btn btn-info btn-lg btn--highlight" id="submit-btn" name="submit-btn" type="submit">Send Us Message</button>
+                    <div id="response"></div>
+                </form>
+        </pre>
+
+        <p>Result:</p>
+		<img src="images/contact.png" alt="">
+
+		<hr>
+		
+		<h3 id="faqs"><strong>I) FAQs</strong> - <a href="#toc">top</a></h3>
+
+		<h4><strong>The way to change color scheme.</strong></h4>
+			<p>If you want to change color scheme for Appic Template you can make it in two ways.</p>
+			<p>First way: choose one of existing color schemes. There are 18 stylesheets that already created if folder css (you can watch it live on <a href="http://appic.designzway.com/" target="_blank"> appic website </a>.) They have variation of light and dark background and different main colors (green, yellow, orange, emerald, blue and so on.). This is full list: </p>
+
+			<ol>
+				<li>style_blue.css</li>
+				<li>style_blue_light.css</li>
+				<li>style_default.css</li>
+				<li>style_default_light.css</li>
+				<li>style_emerald.css</li>
+				<li>style_emerald_light.css</li>
+				<li>style_green.css</li>
+				<li>style_gren_light.css</li>
+				<li>style_orange.css</li>
+				<li>style_orange_light.css</li>
+				<li>style_pink.css</li>
+				<li>style_pink_light.css</li>
+				<li>style_purple.css</li>
+				<li>style_purple_light.css</li>
+				<li>style_red.css</li>
+				<li>style_red_light.css</li>
+				<li>style_yellow.css</li>
+				<li>style_yellow_light.css</li>
+			</ol>
+
+			<p>Choose the suitable theme, replace default "style.css" file in your pages and enjoy it.</p>
+
+			<p>Second way: use less file and variables. First you should install program for less compile. One of posibible variant is <a href="http://alphapixels.com/prepros/">Prepros</a> (you can download this program for free, it works on Windows and Mac). Read a manual to this program. Than you should make several steps:</p>
+
+			<ul>
+				<li> Add a template folder to working directoty.</li>
+				<li>Track this directory by compiled program.</li>
+				<li>Open file "vars.less" in folder "less/base".</li>
+				<li>Find 3 variables: @brand-primary, @brand-primary-darker and @brand-info.</li>
+				<li>Change @brand-primary amd @brand-primary-darker values for changing header and footer background and some primary color element in pages. </li>
+				<li>Change @brand-info and you will rewrite color for heading, buttons and some text on pages.</li>
+				<li>* Remember you can change only one variable, for example @brand-info only.</li>
+				<li>Save changes. Open browser and look at the results.</li>
+			</ul>
+			<p>If you done all the steps correctly this manipulation will override your default "style.css" in folder css. So we advice you to make a backup first and you will have an opportunity to go back.</p>
+		<hr>
+
+		<h4><strong>How to work with the main menu?</strong></h4>
+                    <p>Main menu plugin initiates itself in file  <em>custom.js</em>. It contains following options:</p> 
+                        <ul>
+                            <li>triggerMenu – tracks element if the code which performs switch role for mobile menu view.</li>
+                            <li>subMenuTrigger – tracks elements serving for opening the dropdown menu in mobile view. (If your structure doesn’t provide dropdown  menu this option is not necessary) .</li>
+                            <li>AnimationSpeed – speed of hidden menu opening. </li>
+                        </ul>
+                    
+                    <hr>
+		
+		<h4><strong>How to change the Google map location?</strong></h4>
+                    <ol>
+                        <li>Please, open page <em>custom.js</em></li>
+                        <li>Find <code>function map()</code> in code of this file.<br>
+                        Then find line of code
+                            <code>center: new google.maps.LatLng(40.705002, -73.983450),</code>
+                        </li>
+                        <li>You should change '40.717729,-74.006648' for your own. You can find an appropriate value <a href="maps.google.com">here.</a></li>
+                        <li>You can add additional markers. You should initiate this part of code:
+                            <pre class="brush: html">
+                                var markerB = new google.maps.Marker({
+                                    map: map,
+                                    position: new google.maps.LatLng(51.512615, -0.130607)
+                                });
+                            </pre>
+                        </li>
+                        <li>There you should find a field position: <code>position: new google.maps.LatLng(51.512615, -0.130607)</code></li>
+                        <li>You should change '51.512615, -0.130607' for your own. You can find appropriate value <a href="maps.google.com">here.</a></li>
+                        <li>More details about google maps customization are <a href="https://developers.google.com/maps/documentation/javascript/tutorial">here</a></li>
+                    </ol>
+
+                    <hr>
+		
+		<h4><strong>How to work with contact form?</strong></h4>
+                    <p>This template contains fully working contact form. All you need is to replace your actual e-mail address. Open the "send.php" files that are located in the root with any text editor and replace all the instances of "YOUR_EMAIL_HERE" using the Find and Replace tool (usually the Ctrl+H hot key). Make the same things in file "question.php" and you will configurate for on page "Support".</p>
+
+                    <p>If you want to add a new field to contact form make several steps:</p>
+                    <ul>
+                        <li>Open html file with contact form.</li>
+                        <li>Add a new field to contact form. Class, type and name attributes are necessary.</li>
+                        <li>Open file "form.js" in js folder.</li>
+                        <li>In contact form declaration add new variables, for example:
+                            <pre class="brush: html">
+                                var $address = self.find('[name=contact-address]');
+                            </pre>
+                        </li>
+                        <li>Add validation block.
+                            <pre class="brush: html">
+                                if($address.val().length>2 && $address.val()!= $address.attr('placeholder')) {
+                                    $address.removeClass('invalid_field');
+                                } 
+                                else {
+                                    createErrTult('There is no any <strong>address</strong>.', $address)
+                                    error++;
+                                }
+                            </pre>
+                            This will generate error if field is empty. You can change createErrTult() first argument - error message. Also you can add more depp validation if you need.
+                        </li>
+                        <li>Open "send.php" file.</li>
+                        <li>Add new variable and and this variable to text.
+                            <pre class="brush: html">
+                                $address = $_POST["contact-address"]; //input name attribute
+                            </pre>
+
+                            <pre class="brush: html">
+                               $text = "Name: $name<br>
+                                        Email: $email<br> 
+                                        Address: $address<br> 
+                                        Message: $message";
+                            </pre>
+                        </li>
+
+                        <li>Save all changes.</li>
+                    </ul>
+
+                    <hr>
+
+		<h4 id="twitter"><strong>Twitter Feed</strong></h4>
+		<p style="margin-bottom:0.5em;">There are two steps to setup the Twitter Widget.</p>
+
+		<ol>
+			<li>Setup an application at Twitter dev center and get keys.</li>
+			<li>Put your keys into Twitter files.</li>
+		</ol>
+		<h5>Setup Twitter application</h5>
+		<p>
+			<img src="assets/images/twitter-settings.jpg" height="auto" width="100%" alt="">
+		</p>
+		<ol>
+			<li>Visit <a href="https://dev.twitter.com/apps/">https://dev.twitter.com/apps/</a> and sign in using your Twitter username and password. This doesn't have to be the username or password of the stream you need access to, just a Twitter account you control.</li>
+		<li>Select '<strong>Create new application</strong>' and enter the application details.
+		
+			<ol>
+				<li>The name and description can be anything you like really, but you can't use 'Twitter' in the name.</li>
+				<li>The website field can be your main website and doesn't have to be the site where your Twitter feed or feeds are located.</li>
+				<li>Callback URL can be left blank</li>
+			</ol>
+			
+		</li>
+		<li>Enter the CAPTCHA info and click create</li>
+		<li>On the next details screen, click '<strong>create my access token</strong>'. You may need to refresh the page after a few seconds if it doesn't appear automatically.</li>
+		<li>Make a note of the <em>Consumer key</em>, <em>Consumer secret</em>, <em>Access token</em> and <em>Access token secret</em> as highlighted below.</li>
+	</ol>
+		<h5>Setup Twitter application</h5>
+		<ol>
+			<li>Open <strong>get-tweets.php</strong> file with help of your editor.</li>
+			<li>Enter your twitter user name for <strong>$twitteruser = "";</strong></li>
+			<li>Enter your consumer key for <strong>$consumerkey = "";</strong></li>
+			<li>Enter your consumer secret key for <strong>$consumersecret = "";</strong></li>
+			<li>Enter your access token for <strong>$accesstoken = "";</strong></li>
+			<li>Enter your access token secret for <strong>$accesstokensecret = "";</strong></li>
+			<li>Open <strong>js/jquery.twitter.js</strong> file with help of your editor.</li>
+			<li>Enter your twitter profile name for <strong>$twitterprofile = "";</strong> (row 6)</li>
+			<li>Enter your twitter screen name for <strong>$screenname = "";</strong> (row 7)</li>
+			<li>Save your changes.</li>
+		</ol>
+
+		<hr>
+
+		<h4 id="flickr"><strong>Flickr</strong></h4>
+		<p>In order to use flickr feed widget you need to change flickr id:</p>
+		<ol>
+			<li>Open <strong>js/custom.js</strong></li>
+			<li>
+				Change Flickr id (row 241)
+                <pre class"brush: js">
+                id: '52617155@N08'
+                </pre>
+			</li>
+			<li>Save your changes</li>
+		</ol>
+
+		<hr>
+
+		<h4 id="commings"><strong>Setting time on Coming soon page</strong></h4>
+		<p>To set the time on Coming soon page you need:</p>
+		<ol>
+			<li>Open <strong>js/count.down.js</strong></li>
+			<li>
+				Change date of beginning & date of end
+                <pre class"brush: js">
+                dateOfBeginning = dateOfB || "Jul 4, 2013"; //type your date of the Beginnig
+				dateOfEnd = dateOfE || "Aug 15, 2013"; //type your date of the end
+                </pre>
+			</li>
+			<li>Save your changes</li>
+		</ol>
+
+		
+		<hr>
+		
+		<h3 id="credits"><strong>J) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<ul>
+			<li><a href="http://jquery.com/">jquery</a></li>
+			<li><a href="http://modernizr.com/">modernizr</a></li>
+            <li><a href="http://getbootstrap.com/2.3.2/">bootstrap </a></li>
+            <li><a href="http://www.jacklmoore.com/colorbox/">colorbox </a></li>
+            <li><a href="http://bxslider.com/">bxslider </a></li>
+            <li><a href="http://fitvidsjs.com/">fitvids </a></li>
+            <li><a href="http://anthonyterrien.com/knob/">knob </a></li>
+            <li><a href="http://fredhq.com/projects/roundabout/">roundabout </a></li>
+            <li><a href="http://masonry.desandro.com/">masonry </a></li>
+            <li><a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">Slider Revolution Responsive jQuery Plugin </a></li>
+       </ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As we said at the beginning, We'd be glad to help you if you have any questions relating to this theme. No guarantees, but We'll do our best to assist. If you have a more general question, relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Olia Gozha</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+	
+	
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+	<script type="text/javascript">
+    SyntaxHighlighter.all()
+	</script>
+</body>
+</html>
